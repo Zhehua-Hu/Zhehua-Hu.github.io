@@ -1,3 +1,13 @@
+---
+layout: post
+title: 手把手照模板搭建你自己的博客
+category: 轻分享
+tags: 
+keywords: 
+description: 
+---
+
+
 Note
 ===
 
