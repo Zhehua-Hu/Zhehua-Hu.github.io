@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cross GFW
-category: How-to Pipeline
+title: CrossGFW
+category: How-toPipeline
 tags: 
 keywords: 
 description: 
