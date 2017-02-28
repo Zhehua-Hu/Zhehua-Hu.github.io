@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 手把手照模板搭建你自己的博客
+title: 使用本模板,手把手搭建博客
 category: 工具链
 tags: 
     Git
