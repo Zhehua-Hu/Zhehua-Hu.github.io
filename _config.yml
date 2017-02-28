@@ -29,7 +29,7 @@ ga:
   url: painterlin.com
 
 # disqus 设置
-# comments: true
+comments: true
 disqus:
   shortname: zhehua
 
