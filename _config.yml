@@ -28,12 +28,12 @@ ga:
   url: painterlin.com
 
 # disqus 设置
-comments: true
+# comments: true
 disqus:
   shortname: zhehuablog
 
 # 主题设置，自动激活某个标签
-active: 读书
+active: 轻分享
 
 # 首页除了最新文章外显示分类
 cates: 
