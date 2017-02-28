@@ -1,6 +1,7 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
-markdown: redcarpet
+markdown: kramdown
+# markdown: redcarpet
 
 # 作者信息
 author: 
@@ -30,7 +31,7 @@ ga:
 # disqus 设置
 # comments: true
 disqus:
-  shortname: zhehuablog
+  shortname: zhehua
 
 # 主题设置，自动激活某个标签
 active: 轻分享
