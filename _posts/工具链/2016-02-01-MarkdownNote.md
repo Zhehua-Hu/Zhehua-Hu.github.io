@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MarkdownNote
+title: Markdown
 category: 工具链
 tags:
     Markdown
