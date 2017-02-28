@@ -1,14 +1,13 @@
 ---
 layout: post
-title: 向程序员学习逼格
+title: 漫谈Windows软件工具
 category: 工具链
-tags: 学习之路
+tags: 漫谈
 keywords: 
 description: 
 ---
 
 # demo3
-
-统一配色与编程风格
+../../public/img/
 
 

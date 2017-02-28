@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 计算机视觉相关资源
-category: 轻分享
+category: 工程录
 tags: CV
 keywords: 
 description: 
