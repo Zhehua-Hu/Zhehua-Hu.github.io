@@ -1,22 +1,21 @@
 permalink: /:year/:month/:day/:title.html
-paginate: 10
+paginate: 5
 markdown: kramdown
-# markdown: redcarpet
+
 
 # 作者信息
-author: 
-  name: Zhehua Hu
-  email: lay.1010@hotmail.com
+author:
+  name: Anya Lin
+  email: zhehua@zhehua.info
   link: http://zhehua.info
-  weibo: http://weibo.com/orangeissweet
-  github: http://github.com/lay1010
-  music: http://site.douban.com/linanya
-  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+  github: https://github.com/Zhehua-Hu
+  weibo: http://weibo.com/huzhehua
+  linkedin: https://www.linkedin.com/in/zhehua
 
 # 站点信息
 title: 哲华的博客
-description: My personal blog
-url: http://painterlin.com
+description: Zhehua's Blog
+url: http://zhehua.info
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
@@ -28,10 +27,6 @@ ga:
   id: UA-54262064-1 
   url: painterlin.com
 
-# disqus 设置
-#comments: true
-disqus:
-  shortname: zhehua
 
 # 主题设置，自动激活某个标签
 active: 博文心
