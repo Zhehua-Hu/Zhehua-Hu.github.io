@@ -28,8 +28,9 @@ ga:
   url: painterlin.com
 
 # disqus 设置
+comments: true
 disqus:
-  shortname: painterlin
+  shortname: zhehuablog
 
 # 主题设置，自动激活某个标签
 active: 读书
