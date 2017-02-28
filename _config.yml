@@ -29,17 +29,17 @@ ga:
   url: painterlin.com
 
 # disqus 设置
-comments: true
+#comments: true
 disqus:
   shortname: zhehua
 
 # 主题设置，自动激活某个标签
-active: 轻分享
+active: 博文心
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Optimization
-  - LaTeX
+  - 博客必读
+
 
 # 中文本地化
 locals:
