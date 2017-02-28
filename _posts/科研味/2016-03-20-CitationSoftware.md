@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 文献管理工具浅谈
-category: 工具链
+category: 科研味
 tags: PaperMaker
 keywords:
 description:
