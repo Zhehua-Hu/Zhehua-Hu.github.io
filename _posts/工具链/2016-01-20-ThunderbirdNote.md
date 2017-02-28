@@ -2,7 +2,7 @@
 layout: post
 title: 跨平台邮件系统Thunderbird
 category: 工具链
-tags: 必学
+tags: 效率工具链
 keywords:
 description:
 ---
