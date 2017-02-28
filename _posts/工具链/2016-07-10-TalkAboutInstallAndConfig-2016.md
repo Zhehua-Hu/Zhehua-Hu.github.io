@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 漫谈:环境配置有多烦
+title: 漫谈环境配置有多烦
 category: 工具链
-tags:
+tags: 漫谈
 keywords: 
 description: 
 ---

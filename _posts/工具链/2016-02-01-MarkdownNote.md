@@ -116,6 +116,13 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 |X|1|2|3|
 |Y|4|5|6|
 
+
+|AAAAAA|BBBBBB|CCCCCC|
+|---|---|---|
+|X|1|2|
+|Y|4|5|
+
+
 # 6.Math
 > MathJax
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
