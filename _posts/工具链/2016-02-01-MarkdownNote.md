@@ -1,8 +1,10 @@
 ---
 layout: post
 title: MarkdownNote
-category: How-to Snippet
-tags: Markdown
+category: 工具链
+tags:
+    Markdown
+    Blog
 keywords: 
 description: 
 ---
@@ -69,9 +71,9 @@ Website: [Submit your picture to get link](https://sm.ms/)
 
 WebLinkImg: ![Logo](https://ooo.0o0.ooo/2016/06/10/575aba38d2647.jpg)
 
-LocalLinkImg:![](../../public/img/How-to/Markdown/logo_test.png)
+LocalLinkImg:![](../../public/img/Toolchain/Markdown/logo_test.png)
 
-LogoWithLink:[![](../../public/img/How-to/Markdown/logo_test.png)](http://zhehua.info)
+LogoWithLink:[![](../../public/img/Toolchain/Markdown/logo_test.png)](http://zhehua.info)
 ___
 
 I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
