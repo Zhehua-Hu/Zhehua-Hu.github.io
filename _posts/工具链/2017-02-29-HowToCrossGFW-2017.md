@@ -1,9 +1,9 @@
 ---
 layout: post
-title: CrossGFW
-category: Pipeline
-tags: 科学上网
-keywords: 
+title: 浅谈如何科学上网
+category: 工具链
+tags: 必学
+keywords: 翻墙
 description: 
 ---
 
