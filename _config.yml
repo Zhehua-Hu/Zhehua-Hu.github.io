@@ -1,15 +1,6 @@
-permalink: /:year/:month/:day/:title.html
-#分页设置
-paginate: 5
-# 目前版本不再推荐redcarpet
-markdown: kramdown
-encoding: utf-8
-gems:
-  - jemoji
-  
 # 作者信息
 author:
-  name: Anya Lin
+  name: HuZhehua
   email: zhehua@zhehua.info
   link: http://zhehua.info
   github: https://github.com/Zhehua-Hu
@@ -26,18 +17,12 @@ rss_url: /pages/atom.xml
 gavatar: /public/img/blog/EnchainLogoLittle.ico
 favicon: /public/img/blog/EnchainLogoLittle.ico
 
-# google analytics 设置
-# 不用修改_includes/googleanalytics.html
-ga:
-  id: UA-92998021-1
-  url: zhehua.info
-
-# disqus 设置
-comments: true
-disqus:
-  shortname: zhehua
-
-
+permalink: /:year/:month/:day/:title.html
+#分页设置
+paginate: 5
+# 目前版本不再推荐redcarpet
+markdown: kramdown
+encoding: utf-8
 
 # 主题设置，自动激活某个标签
 active: 博文心
@@ -52,3 +37,20 @@ locals:
   about: 关于
   newest: 最新文章
   archive: 归档
+
+# 插件设置
+
+# google analytics 设置
+# 不用修改_includes/googleanalytics.html
+ga:
+  id: UA-92998021-1
+  url: zhehua.info
+
+# disqus 设置
+comments: true
+disqus:
+  shortname: zhehua
+
+
+gems:
+  - jemoji

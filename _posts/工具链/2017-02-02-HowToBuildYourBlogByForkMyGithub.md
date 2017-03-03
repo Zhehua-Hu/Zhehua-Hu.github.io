@@ -80,26 +80,16 @@ description:
 
 
 
-## Jelly简介
+## Jelly使用
 
+* 入门参考
+[发布文章、加入评论功能、加入Google Analytics](http://www.jianshu.com/p/ffbbed22f984)
 
-### Folder简介
-public: no need to change
-_includes:
-_layouts:
-
--config.yml: 
-
-pages:
-about.html
-Atom供稿格式（Atom Syndication Format）
-
+[清晰的中文wiki](http://wiki.jikexueyuan.com/project/jekyll/)
 
 
 
 ## 定制与插件
-
-本博客未开通评论，故没有disqus设置
 
 
 ### 加入Emoji图像支持
