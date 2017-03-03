@@ -1,6 +1,17 @@
+permalink: /:year/:month/:day/:title.html
+#分页设置
+paginate: 10
+# 目前版本不再推荐redcarpet
+markdown: kramdown
+# encoding: utf-8
+
+# DO NOT USE "gems: - jemoji". IT WILL BREAK NAVIGATOR
+# gems: ["jemoji"]
+
+
 # 作者信息
 author:
-  name: HuZhehua
+  name: Anya Lin
   email: zhehua@zhehua.info
   link: http://zhehua.info
   github: https://github.com/Zhehua-Hu
@@ -17,12 +28,7 @@ rss_url: /pages/atom.xml
 gavatar: /public/img/blog/EnchainLogoLittle.ico
 favicon: /public/img/blog/EnchainLogoLittle.ico
 
-permalink: /:year/:month/:day/:title.html
-#分页设置
-paginate: 5
-# 目前版本不再推荐redcarpet
-markdown: kramdown
-encoding: utf-8
+
 
 # 主题设置，自动激活某个标签
 active: 博文心
@@ -51,6 +57,3 @@ comments: true
 disqus:
   shortname: zhehua
 
-
-gems:
-  - jemoji
