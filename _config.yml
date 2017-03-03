@@ -1,8 +1,10 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 5
 markdown: kramdown
-
-
+encoding: utf-8
+gems:
+  - jemoji
+  
 # 作者信息
 author:
   name: Anya Lin
