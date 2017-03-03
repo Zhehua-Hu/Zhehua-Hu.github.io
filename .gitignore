@@ -1,4 +1,6 @@
 _site/
 _drafts/
 tools/
-.DS_Store
+
+.idea/
+.DS_Store/
