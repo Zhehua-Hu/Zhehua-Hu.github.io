@@ -32,8 +32,8 @@ body, html {
   padding-right: 0px;
   border-radius: 0px;
   color: #fff;
-  font-size: 15px;
-  padding: 6px 6px;
+  font-size: 15px; /* 字体若再小，在大尺寸屏幕显示不佳*/
+  padding: 6px 6px; /* 经测试，可使三个字在一排显示 */
 
 }
 
@@ -50,7 +50,7 @@ body, html {
 }
 
 .avatar {
-  width: 56px;
+  width: 80%; /*原设置 56px;*/
   /*height: 90px;*/
   border: 0px solid #fff;
 }
