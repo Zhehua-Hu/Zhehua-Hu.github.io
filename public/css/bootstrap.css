@@ -1346,7 +1346,7 @@ a.text-success:hover {
 }
 
 .text-info {
-    color: #31708f
+    color: #268bd2
 }
 
 a.text-info:hover {
@@ -5126,7 +5126,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .alert-info {
     background-color: #d9edf7;
     border-color: #bce8f1;
-    color: #31708f
+    color: #268bd2
 }
 
 .alert-info hr {
@@ -5463,12 +5463,12 @@ a.list-group-item-success.active:focus {
 }
 
 .list-group-item-info {
-    color: #31708f;
+    color: #268bd2;
     background-color: #d9edf7
 }
 
 a.list-group-item-info {
-    color: #31708f
+    color: #268bd2
 }
 
 a.list-group-item-info .list-group-item-heading {
@@ -5476,15 +5476,15 @@ a.list-group-item-info .list-group-item-heading {
 }
 
 a.list-group-item-info:hover, a.list-group-item-info:focus {
-    color: #31708f;
+    color: #268bd2;
     background-color: #c4e3f3
 }
 
 a.list-group-item-info.active, a.list-group-item-info.active:hover,
 a.list-group-item-info.active:focus {
     color: #fff;
-    background-color: #31708f;
-    border-color: #31708f
+    background-color: #268bd2;
+    border-color: #268bd2
 }
 
 .list-group-item-warning {
@@ -5830,7 +5830,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-info>.panel-heading {
-    color: #31708f;
+    color: #268bd2;
     background-color: #E5F7F3;
     border-color: #B7F4ED;
 }
@@ -5841,7 +5841,7 @@ a.list-group-item-danger.active:focus {
 
 .panel-info>.panel-heading .badge {
     color: #d9edf7;
-    background-color: #31708f
+    background-color: #268bd2
 }
 
 .panel-info>.panel-footer+.panel-collapse>.panel-body {

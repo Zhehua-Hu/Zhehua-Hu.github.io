@@ -8,6 +8,10 @@ markdown: kramdown
 
 # gems: ["jemoji"]
 
+# /*1ABC9C blue #268bd2 */
+ #/*16A085 to green #859900 */
+# /*base #073642 */
+#/*#E5F7F3 #31708F*/
 
 # 作者信息
 author:
