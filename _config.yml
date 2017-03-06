@@ -1,10 +1,17 @@
 permalink: /:year/:month/:day/:title.html
 #分页设置
+gems: [jekyll-paginate]
+
 paginate: 5
+
 # 目前版本不再推荐redcarpet
 markdown: kramdown
 # encoding: utf-8
 
+zhehua:
+  cdn:../../../assets/files/EnchainLogoLittle.ico
+
+mcdn: ../../../assets/files/EnchainLogoLittle.ico
 
 # gems: ["jemoji"]
 
