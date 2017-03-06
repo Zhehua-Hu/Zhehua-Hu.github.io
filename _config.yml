@@ -9,6 +9,7 @@ markdown: kramdown
 # encoding: utf-8
 
 zhehua:
+  emoji:../../../assets/images/emojis/+1.png
   cdn:../../../assets/files/EnchainLogoLittle.ico
 
 mcdn: ../../../assets/files/EnchainLogoLittle.ico
