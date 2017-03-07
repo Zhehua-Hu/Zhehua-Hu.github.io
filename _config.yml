@@ -10,8 +10,9 @@ markdown: kramdown
 # encoding: utf-8
 
 zhehua:
+  images: http://zhehua.info/assets/images
   emoji: http://github.com/Zhehua-Hu/Zhehua-Hu.github.io/tree/master/assets/images/emojis
-  emojis: https://github.com/Zhehua-Hu/Zhehua-Hu.github.io/tree/master/assets/images/emojis
+
 
 
 # /*1ABC9C blue #268bd2 */

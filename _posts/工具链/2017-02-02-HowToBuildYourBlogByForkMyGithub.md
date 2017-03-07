@@ -113,3 +113,9 @@ gems:
 
 [官网](http://jekyll.com.cn/docs/plugins/)
 [常见插件](http://wiki.jikexueyuan.com/project/jekyll/plugins.html)
+
+
+# 选择共享协议
+[知识共享许可协议](https://creativecommons.org/choose/?lang=zh)
+
+[介绍wiki](https://zh.wikipedia.org/wiki/%E5%88%9B%E4%BD%9C%E5%85%B1%E7%94%A8)
