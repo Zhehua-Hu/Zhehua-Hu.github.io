@@ -9,6 +9,13 @@ description:
 ---
 
 
+
+## 进阶主题
+
+* decorator
+[用法大全](https://wiki.python.org/moin/PythonDecoratorLibrary)
+
+
 ## Lib
 Numpy	
 scipy	
