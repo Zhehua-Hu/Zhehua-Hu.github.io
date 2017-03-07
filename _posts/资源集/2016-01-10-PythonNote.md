@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python学习之路
-category: 工具链
+category: 资源集
 tags: 学习之路
       Python
 keywords: 
