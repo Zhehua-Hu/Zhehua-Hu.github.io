@@ -11,7 +11,7 @@ markdown: kramdown
 
 zhehua:
   images: http://zhehua.info/assets/images
-  emoji: http://github.com/Zhehua-Hu/Zhehua-Hu.github.io/tree/master/assets/images/emojis
+  emoji: http://zhehua.info/assets/images/emojis
 
 
 
@@ -36,8 +36,8 @@ url: http://zhehua.info
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/blog/EnchainLogoLittle.ico
-favicon: /public/img/blog/EnchainLogoLittle.ico
+gavatar: /assets/images/blog/EnchainLogoLittle.ico
+favicon: /assets/images/blog/EnchainLogoLittle.ico
 
 
 
