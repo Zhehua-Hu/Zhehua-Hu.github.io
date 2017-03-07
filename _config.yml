@@ -1,7 +1,8 @@
 permalink: /:year/:month/:day/:title.html
 #分页设置
-gems: [jekyll-paginate]
-
+gems: ["jekyll-paginate"]
+# 使用jemoji后目录将不显示
+# gems: ["jemoji"]
 paginate: 5
 
 # 目前版本不再推荐redcarpet
@@ -9,12 +10,9 @@ markdown: kramdown
 # encoding: utf-8
 
 zhehua:
-  emoji:../../../assets/images/emojis/+1.png
-  cdn:../../../assets/files/EnchainLogoLittle.ico
+  emoji: http://github.com/Zhehua-Hu/Zhehua-Hu.github.io/tree/master/assets/images/emojis
+  emojis: https://github.com/Zhehua-Hu/Zhehua-Hu.github.io/tree/master/assets/images/emojis
 
-mcdn: ../../../assets/files/EnchainLogoLittle.ico
-
-# gems: ["jemoji"]
 
 # /*1ABC9C blue #268bd2 */
  #/*16A085 to green #859900 */
