@@ -7,6 +7,10 @@ keywords:
 description: 
 ---
 
+## 可视化方法加速理解
+[动画展示各种路径搜索算法](http://netsmell.com/post/pathfinding.html)
+
+
 ## 下载类
 
 * Youtube
@@ -35,12 +39,18 @@ description:
 
 [iconarchive](http://www.iconarchive.com)
 
+[文字图形](https://tagul.com/)
 
-# 杂项
+<img src="{{site.zhehua.images}}/misc/Word Cloud.png" width = "100" height = "100" />
 
-* 
+
+
+## 杂项
+
 
 [查询身份证归属地](http://tools.cz88.net/index.php)
 
 [快读啦](http://kuaidula.com/?url_type=39&object_type=webpage&pos=1)
 通过不移动头，加快阅读速度
+
+
