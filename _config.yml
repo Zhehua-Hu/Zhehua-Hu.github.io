@@ -1,16 +1,15 @@
 permalink: /:year/:month/:day/:title.html
 #分页设置
 gems: ["jekyll-paginate"]
+paginate: 5
+
 # 使用jemoji后目录将不显示
 # gems: ["jemoji"]
-paginate: 5
 
 # 目前版本不再推荐redcarpet
 markdown: kramdown
 
-highlight: true
-
-
+# 我的宏定义
 zhehua:
   images: http://zhehua.info/assets/images
   emoji: http://zhehua.info/assets/images/emojis
