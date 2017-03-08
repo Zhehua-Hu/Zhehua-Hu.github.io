@@ -138,3 +138,6 @@ gems:
 
 而google-code-prettify配置好后可以用 <pre> <YourCode>  </pre>标识符， 也可以使用传统的```或tab显示代码块。
 
+
+## SEO
+http://guochenglai.com/2016/09/26/baidu-crow-github-page/
