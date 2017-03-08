@@ -86,8 +86,10 @@ function contentEffects(){
         current.attr("id", "title" + i);
         tag = current.prop('tagName').substr(-1);
         $("#nav").append("<div style='margin-left:"+15*(tag-1)+"px'><a id='link" + i + "' href='#title" +i + "'>" + current.html() + "</a></div>");
-    }); 
+    });
+    // pretty 代码高亮
     $("pre").addClass("prettyprint");
+    $("pre").addClass("prettyprint linenums").attr('style', 'overflow:auto');
     prettyPrint(); 
     $('#content img').addClass('img-thumbnail').parent('p').addClass('center');
     $('#content_btn').show();

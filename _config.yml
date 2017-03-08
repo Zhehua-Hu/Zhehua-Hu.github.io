@@ -7,18 +7,14 @@ paginate: 5
 
 # 目前版本不再推荐redcarpet
 markdown: kramdown
-# encoding: utf-8
+
+highlight: true
+
 
 zhehua:
   images: http://zhehua.info/assets/images
   emoji: http://zhehua.info/assets/images/emojis
 
-
-
-# /*1ABC9C blue #268bd2 */
- #/*16A085 to green #859900 */
-# /*base #073642 */
-#/*#E5F7F3 #31708F*/
 
 # 作者信息
 author:

@@ -115,7 +115,26 @@ gems:
 [常见插件](http://wiki.jikexueyuan.com/project/jekyll/plugins.html)
 
 
-# 选择共享协议
+## 选择共享协议
 [知识共享许可协议](https://creativecommons.org/choose/?lang=zh)
 
 [介绍wiki](https://zh.wikipedia.org/wiki/%E5%88%9B%E4%BD%9C%E5%85%B1%E7%94%A8)
+
+
+
+## 博客主题颜色修改
+
+/*1ABC9C blue #268bd2 */
+/*16A085 to green #859900 */
+/*base #073642 */
+/*#E5F7F3 #31708F*/
+
+
+## 代码高亮
+
+常用有Pygments，[google-code-prettify](https://github.com/google/code-prettify)。
+
+由于Pygments需要在markdown文件内插入{`%` highlight } <YourCode> {`%` endhighlight `%`} 标识符， 使得markdown语法格式不再纯粹，也不再通用。
+
+而google-code-prettify配置好后可以用 <pre> <YourCode>  </pre>标识符， 也可以使用传统的```或tab显示代码块。
+

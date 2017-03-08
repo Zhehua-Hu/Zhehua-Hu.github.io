@@ -1,31 +1,31 @@
-pre.prettyprint { display: block; background-color: #333 }
+pre.prettyprint { display: block; background-color: #002B36 }
 pre .nocode { background-color: none; color: #000 }
-pre .str { color: #ffa0a0 } /* string  - pink */
-pre .kwd { color: #f0e68c; font-weight: bold }
-pre .com { color: #87ceeb } /* comment - skyblue */
-pre .typ { color: #98fb98 } /* type    - lightgreen */
-pre .lit { color: #cd5c5c } /* literal - darkred */
-pre .pun { color: #fff }    /* punctuation */
-pre .pln { color: #fff }    /* plaintext */
-pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
-pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
-pre .atv { color: #ffa0a0 } /* attribute value - pink */
-pre .dec { color: #98fb98 } /* decimal         - lightgreen */
+pre .str { color: #d33682 } /* string */
+pre .kwd { color: #2aa198; font-weight: bold }
+pre .com { color: #93a1a1} /* comment */
+pre .typ { color: #859900 } /* type */
+pre .lit { color: #dc322f } /* literal */
+pre .pun { color: #93a1a1 }    /* punctuation */
+pre .pln { color: #268bd2; }    /* plaintext */
+pre .tag { color: #2aa198; } /* html/xml tag */
+pre .atn { color: #bdb76b; } /* attribute name */
+pre .atv { color: #d33682 } /* attribute value */
+pre .dec { color: #859900 } /* decimal */
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #2aa198; font-weight: bold; font-size: 120%; } /* IE indents via margin-left */
 /* Alternate shading for lines */
 
 @media print {
   pre.prettyprint { background-color: none }
-  pre .str, code .str { color: #060 }
-  pre .kwd, code .kwd { color: #006; font-weight: bold }
-  pre .com, code .com { color: #600; font-style: italic }
-  pre .typ, code .typ { color: #404; font-weight: bold }
-  pre .lit, code .lit { color: #044 }
-  pre .pun, code .pun { color: #440 }
+  pre .str, code .str { color: #859900 }
+  pre .kwd, code .kwd { color: #268bd2; font-weight: bold }
+  pre .com, code .com { color: #dc322f; font-style: italic }
+  pre .typ, code .typ { color: #6c71c4; font-weight: bold }
+  pre .lit, code .lit { color: #2aa198 }
+  pre .pun, code .pun { color: #b58900 }
   pre .pln, code .pln { color: #000 }
-  pre .tag, code .tag { color: #006; font-weight: bold }
-  pre .atn, code .atn { color: #404 }
-  pre .atv, code .atv { color: #060 }
+  pre .tag, code .tag { color: #268bd2; font-weight: bold }
+  pre .atn, code .atn { color: #6c71c4 }
+  pre .atv, code .atv { color: #859900 }
 }
