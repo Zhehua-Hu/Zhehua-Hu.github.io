@@ -7,8 +7,6 @@ keywords:
 description: 
 ---
 
-
-
 ## 下载并安装[u-center](http://pan.baidu.com/s/1skFwlZ3)
 
 ## 操作步骤
