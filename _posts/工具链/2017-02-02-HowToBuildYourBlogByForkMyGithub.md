@@ -140,4 +140,38 @@ gems:
 
 
 ## SEO
+
+百度收录
 http://guochenglai.com/2016/09/26/baidu-crow-github-page/
+
+谷歌检索
+http://www.jianshu.com/p/df46bca5889d
+
+[世界IT产品市场份额统计](http://gs.statcounter.com)
+
+[中国搜索引擎市场份额统计](http://gs.statcounter.com/search-engine-market-share/all/china)
+
+
+
+## 添加sitemap
+
+```
+---
+title : Sitemap
+---
+{% for page in site.pages %}
+  {{site.url}}{{ page.url }}
+{% endfor %}
+{% for post in site.posts %}
+  {{site.url}}{{ post.url }}
+{% endfor %}
+```
+
+[google 添加sitemap](https://www.google.com/webmasters)
+
+## 使用超链接引用自身博文
+
+```
+[博文]({{site.zhehua.home}}/2016/07/05/GitignoreSyntax.html)
+
+```
