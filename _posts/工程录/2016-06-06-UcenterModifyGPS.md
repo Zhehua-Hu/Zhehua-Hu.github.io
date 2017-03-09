@@ -2,12 +2,15 @@
 layout: post
 title: 使用u-center修改GPS内置设定
 category: 工程录
-tags: demo
+tags: 硬件
 keywords: 
 description: 
 ---
 
-## 下载并安装[u-center](http://pan.baidu.com/s/1skFwlZ3)
+## 下载并安装
+提供百度云盘[u-center](http://pan.baidu.com/s/1skFwlZ3)
+
+也可官网下载。
 
 ## 操作步骤
 * 连接GPS，打开u-center，连接串口
