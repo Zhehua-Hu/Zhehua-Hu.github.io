@@ -7,7 +7,7 @@ keywords:
 description: 
 ---
 
-• 深度变暖，人人有责
+* 深度变暖，人人有责
 
 
 * 来自LeCun
