@@ -28,7 +28,7 @@ description:
 * 更新型工作经验：github
 
 
-# 预计分享
+## 预计分享
 
 有效的Ubuntu工作环境
 用tag串起系列文章
