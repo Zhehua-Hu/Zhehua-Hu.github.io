@@ -1,8 +1,8 @@
 ---
 layout: post
-title: demo
-category: 
-tags: demo
+title: 关于深度学习的调侃
+category: 轻分享
+tags: 无标签类
 keywords: 
 description: 
 ---
