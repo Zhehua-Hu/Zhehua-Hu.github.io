@@ -10,9 +10,9 @@ description:
 • 深度变暖，人人有责
 
 
----
+* 来自LeCun
 ![]({{site.zhehua.images}}/LightShare/Jokes/LeCunDL.jpg)
 
-
+* 来自周志华
 ![]({{site.zhehua.images}}/LightShare/Jokes/5YuanCNN.jpg)
 
