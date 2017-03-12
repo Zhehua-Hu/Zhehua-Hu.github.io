@@ -63,6 +63,14 @@ IT类书籍pdf
 [https://www.fontsquirrel.com/](https://www.fontsquirrel.com/)
 
 
+## 配色
+[屏幕取色软件](http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Others/TakeColor.shtml)
+
+[中国传统色彩名称及分类](http://color.uisdc.com/)
+
+[网页设计常用色彩搭配表](http://tool.c7sky.com/webcolor/#hue_4)
+
+
 ### 图片处理
 
 [图片增加圆角](http://www.roundpic.com/index.php)
