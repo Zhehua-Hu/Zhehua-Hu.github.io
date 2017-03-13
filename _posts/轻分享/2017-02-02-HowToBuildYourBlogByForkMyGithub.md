@@ -2,8 +2,7 @@
 layout: post
 title: 使用本模板搭建博客
 category: 轻分享
-tags: 
-    Git
+tags:
     Blog
 keywords: 
 description: 
