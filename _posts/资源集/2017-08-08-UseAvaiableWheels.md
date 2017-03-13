@@ -13,14 +13,13 @@ description:
 
 
 
-    About
-    Developers
-    Updates
-    searchcode server
+[searchcode](https://searchcode.com/)
 
 
 
-Github是
+Github是![]({{site.zhehua.images}}/misc/likaifu_github.png)
 
 
 [Awesome Awesomeness](https://github.com/bayandin/awesome-awesomeness)
+
+[Python 资源大全中文版](https://github.com/jobbole/awesome-python-cn)
