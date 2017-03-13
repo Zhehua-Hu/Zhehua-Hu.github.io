@@ -51,9 +51,14 @@ IT类书籍pdf
 [https://materialdesignicons.com/](https://materialdesignicons.com/)
 
 * web搜索库
-[http://www.iconarchive.com](http://www.iconarchive.com)
 
-[http://www.iconfont.cn/](http://www.iconfont.cn/)
+    [http://www.iconarchive.com](http://www.iconarchive.com)
+
+    [http://www.iconfont.cn/](http://www.iconfont.cn/)
+
+### LOGO
+
+[http://www.logologo.com](http://www.logologo.com)
 
 
 ### 字体
