@@ -9,25 +9,23 @@ description:
 
 ## 下载
 
-* Youtube下载工具
+### Youtube下载工具
 已经能科学上网后，Youtube上存在大量视频教程，当然也有不少开眼界的频道，可以考虑下载。
 
 [免费批量下载工具](http://youtubemultidownloader.com/index.html)
 
 [下载与在线转码工具](http://www.clipconverter.cc/)
 
-* IT类书籍
-IT类书籍pdf
+### IT类书籍
 [allitebooks](http://www.allitebooks.com/)
 
-* office资源
-
+### office资源
 [office模板](http://www.officeplus.cn/Template/Home.shtml)
 
 
 ## 设计
 
-常见设计资源主要有图标（icon/LOGO），图库（无版权，免费版权或收费），字体
+常见设计资源主要有图标（icon/LOGO），图库（无版权，免费版权或收费），字体等。
 
 ### 无版权/免费版权图片
 
@@ -44,25 +42,24 @@ IT类书籍pdf
 
 ### 图标
 
-* 黑白风格的矢量图，本人的Enchain项目有使用。
+#### 黑白风格的矢量图，亲测
 [https://github.com/oblador/react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
 * Material Design风格
+
 [https://materialdesignicons.com/](https://materialdesignicons.com/)
 
 * web搜索库
 
-    [http://www.iconarchive.com](http://www.iconarchive.com)
+[http://www.iconarchive.com](http://www.iconarchive.com)
 
-    [http://www.iconfont.cn/](http://www.iconfont.cn/)
+[http://www.iconfont.cn/](http://www.iconfont.cn/)
 
 ### LOGO
-
 [http://www.logologo.com](http://www.logologo.com)
 
 
 ### 字体
-
 [http://www.myfonts.com/](http://www.myfonts.com/)
 
 [https://www.fontsquirrel.com/](https://www.fontsquirrel.com/)
