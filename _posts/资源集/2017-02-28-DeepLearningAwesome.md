@@ -1,8 +1,8 @@
 ---
 layout: post
-title: demo
-category: 
-tags: demo
+title: "深度学习之学习"
+category: 资源集
+tags: 资源集
 keywords: 
 description: 
 ---
@@ -20,7 +20,9 @@ mxnet
 
 
 ## 可视化
-常见需求有
+常见需求有网络结构可视化，权重与特征图可视化
+[netscope](http://ethereon.github.io/netscope/#/editor)
+
 
 ## 模型
 [Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo)
