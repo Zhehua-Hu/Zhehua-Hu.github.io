@@ -14,7 +14,7 @@ description:
 
 **失控**
 问题-》记录与解决-》文档-》发布
-
+写出来，就能够忘记
 
 写markdown：haroopad
 本地显示：jekyll
