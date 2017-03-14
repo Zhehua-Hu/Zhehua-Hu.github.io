@@ -9,8 +9,10 @@ keywords:
 description: 
 ---
 
+请读者先阅读[《博文纲领》]({{site.zhehua.home}}/2016/01/01/MyBlogKernel.html)
 
-# 博客架构说明
+
+## 博客架构说明
 
 - 博文心
 
