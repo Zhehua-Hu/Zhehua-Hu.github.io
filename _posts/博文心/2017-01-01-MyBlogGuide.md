@@ -2,7 +2,9 @@
 layout: post
 title: "博客使用指南"
 category: 博文心
-tags: Blog
+tags:
+    Blog
+    博客必读
 keywords: 
 description: 
 ---
