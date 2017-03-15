@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "博客之事(一)：使用本模板搭建博客"
+title: "博客之事(三)：使用本模板搭建博客"
 category: 轻分享
 tags:
     Blog

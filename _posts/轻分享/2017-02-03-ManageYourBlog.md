@@ -14,6 +14,8 @@ description:
 
 ### [Google Webmasters](https://www.google.com/webmasters)
 
+### [百度站长平台](http://zhanzhang.baidu.com)
+
 ### [腾讯企业邮箱](https://exmail.qq.com/)
 
 ### [七牛云](https://portal.qiniu.com)

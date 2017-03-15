@@ -22,7 +22,7 @@ description:
 ### 《3D数学基础：图形与游戏开发》
 [作者网站](http://gamemath.com/)
 
-一本简单明了的
+一本简单明了的讲解矩阵、四元数、欧拉角以及编程实现的书，讲出了所以然。
 
 
 
@@ -41,7 +41,7 @@ description:
 
 ## Competition
 
-* [kaggle](https://www.kaggle.com), 目前被google收购
+* [kaggle](https://www.kaggle.com)
 
 
 ## 入门资源
