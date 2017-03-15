@@ -1,7 +1,7 @@
 permalink: /:year/:month/:day/:title.html
 #分页设置
-#gems: ["jekyll-paginate"]
-#paginate: 3
+gems: ["jekyll-paginate"]
+paginate: 3
 
 # 使用jemoji后目录将不显示
 # gems: ["jemoji"]
