@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 漫谈配置文件与序列化
+title: 配置文件与序列化(一)：漫谈篇
 category: 
 tags: demo
 keywords: 
