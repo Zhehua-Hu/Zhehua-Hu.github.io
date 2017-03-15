@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用本模板搭建博客
+title: "博客之事(一)：使用本模板搭建博客"
 category: 轻分享
 tags:
     Blog
@@ -81,12 +81,15 @@ description:
 
 ## Jelly使用
 
-* 入门参考
+* 入门
+
 [发布文章、加入评论功能、加入Google Analytics](http://www.jianshu.com/p/ffbbed22f984)
 
 [清晰的中文wiki](http://wiki.jikexueyuan.com/project/jekyll/)
 
+* 参考
 
+[官网](https://jekyllrb.com/docs/posts/)
 
 ## 定制与插件
 

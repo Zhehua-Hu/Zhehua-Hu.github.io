@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "博客之事一二"
+title: "博客之事(四): 博客管理与博文发布"
 category: 轻分享
 tags: 
     轻分享
@@ -9,27 +9,29 @@ keywords:
 description: 
 ---
 
+## 博客管理
+### [Google Analytics](https://analytics.google.com/analytics)
 
-## 为什么写博客
+### [Google Webmasters](https://www.google.com/webmasters)
 
-**失控**
-问题-》记录与解决-》文档-》发布
-写出来，就能够忘记
+### [腾讯企业邮箱](https://exmail.qq.com/)
 
-写markdown：haroopad
-本地显示：jekyll
-提交github
-坚果云同步
-七牛云与百度云存储
+### [七牛云](https://portal.qiniu.com)
+
+### [dnspod](https://www.dnspod.cn/)
+
+### [DNS Propagation Checker](https://www.whatsmydns.net/)
+
+### [godaddy](https://www.godaddy.com/)
+
+### [评论管理](https://disqus.com)
 
 
-平台效率，编程学习，科研经验，写一个合集
-[学习笔记可发布]
-[问题与经验可发布]
-[工具效率可发布]
-[工作生活可发布]
-[项目wiki]
 
+
+
+
+## 博文发布
 
 
 gif,video发布流程
@@ -37,8 +39,10 @@ gif,video发布流程
 kazam
 
 video to gif
+```
 ffmpeg -i test.mp4 -s 640x480 -r 15 out.gif
-# 有时间控制参数， 分辨率-s 640x480 ， 帧率-r 15
+有时间控制参数， 分辨率-s 640x480 ， 帧率-r 15
+```
 
 imgs to gif
 convert *.png 1linex.gif
@@ -50,6 +54,7 @@ word To md
 [Windows Software](http://www.writage.com/)
 
 [Online Tool](https://word-to-markdown.herokuapp.com/)
+
 
 
 

@@ -7,6 +7,7 @@ keywords:
 description: 
 ---
 
+---
 ## 下载
 
 ### Youtube下载工具
@@ -23,6 +24,7 @@ description:
 [office模板](http://www.officeplus.cn/Template/Home.shtml)
 
 
+---
 ## 设计
 
 常见设计资源主要有图标（icon/LOGO），图库（无版权，免费版权或收费），字体等。
@@ -65,7 +67,7 @@ description:
 [https://www.fontsquirrel.com/](https://www.fontsquirrel.com/)
 
 
-## 配色
+### 配色
 [屏幕取色软件](http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Others/TakeColor.shtml)
 
 [中国传统色彩名称及分类](http://color.uisdc.com/)
@@ -82,5 +84,14 @@ description:
 
 效果如下
 <img src="{{site.zhehua.images}}/misc/Word Cloud.png" width = "100" height = "100" />
+
+
+---
+## Wordpress建站相关
+
+[Official Web](https://cn.wordpress.org/)
+
+[Themes](http://www.wopus.org/themes/)
+
 
 
