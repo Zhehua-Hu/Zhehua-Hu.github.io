@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "计算机视觉用MATLAB还是OpenCV, OpenCV编程用C++还是Python?"
-category: 工程录
-tags: 工程录
+category: 工具链
+tags: 漫谈
 keywords: 
 description: 
 ---
