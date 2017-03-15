@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 配置文件与序列化(一)：漫谈篇
-category: 
-tags: demo
+category: 测试库
+tags: 
+    测试库
 keywords: 
 description: 
 ---
