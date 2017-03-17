@@ -18,3 +18,5 @@ JSON is better for transfer data between applictions
 XML is better for make structured data in popular format, that should be not simple readable 
 
 Google Protocol Buffers is alternative of XML, but more compact and not readable
+
+用作序列化，JSON快于YAML
