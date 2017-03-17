@@ -64,7 +64,7 @@ resources.py
 
 你可以直接输入命令下载本模板
 ```
-wget https://github.com/Zhehua-Hu/Aries/blob/master/templates/.gitignore
+wget https://github.com/Zhehua-Hu/Aries/blob/master/templates/.gitignore 
 ```
 
 
