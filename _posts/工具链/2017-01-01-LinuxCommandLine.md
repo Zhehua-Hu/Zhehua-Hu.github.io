@@ -11,6 +11,10 @@ description:
 
 ## 绪论
 
+## 入门资源
+[UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+
+
 ---
 ## Essential
 Ctrl + C	:	kill　program
@@ -195,21 +199,26 @@ b(no blank here)=2
 \>>	:	append
 
 
-# Sources
-[UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+
+---
+下载
+
+curl是libcurl这个库支持的，wget是一个shell命令。
+http://blog.csdn.net/jiang314/article/details/53172506
+http://bolg.malu.me/html/2011/1239.html
 
 
 ----
-# Notes Start
+## 日常使用笔记
 
-## Show formated date
+### Show formated date
 ```
 echo CurrentDate：`date +"%Y-%m-%d"`
 echo "`date`"
 ```
 
 
-## Debian auto startup
+### Debian auto startup
 
 ```
 crontab -e
@@ -221,7 +230,7 @@ crontab -e
 http://www.cnblogs.com/lsmsky/archive/2012/03/08/2385405.html
 
 
-## find file contain certain string
+### find file contain certain string
 ```
 find . -name "*" | xargs grep "ma"
 ```
@@ -230,7 +239,7 @@ find . -name "*" | xargs grep "ma"
 > search string "ma"
 
 
-## find contained file count
+### find contained file count
 ```
 ls -lR|grep "^-"|wc -l
 ```
