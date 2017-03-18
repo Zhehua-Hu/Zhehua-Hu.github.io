@@ -1,11 +1,12 @@
-#分页设置
-#gems: ["jekyll-paginate"]
-gems: ["github-pages"]
-#
-paginate: 3
+# 分页设置放在gems的最后
+gems: ["github-pages", "jekyll-paginate"]
 
-# 使用jemoji后目录将不显示
-# gems: ["jemoji"]
+# 最新文章显示几篇
+paginate: 3
+emoji:
+  src: "/assets/images/emojis"
+permalink: /:year/:month/:day/:title.html
+
 
 # 目前版本不再推荐redcarpet
 markdown: kramdown
