@@ -94,23 +94,7 @@ description:
 ## 定制与插件
 
 
-### 加入Emoji图像支持
 
-[参照安装](https://github.com/jekyll/jemoji)
-
-* install
-
-```
-gem install jemoji
-```
-
-
-* And add the following to your site's _config.yml
-
-```
-gems:
-  - jemoji
-````
 
 
 [官网](http://jekyll.com.cn/docs/plugins/)
