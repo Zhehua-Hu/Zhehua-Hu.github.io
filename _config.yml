@@ -1,5 +1,7 @@
 #分页设置
-gems: ["jekyll-paginate"]
+#gems: ["jekyll-paginate"]
+gems: ["github-pages"]
+#
 paginate: 3
 
 # 使用jemoji后目录将不显示
