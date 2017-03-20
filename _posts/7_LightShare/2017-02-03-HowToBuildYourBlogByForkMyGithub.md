@@ -76,9 +76,6 @@ description:
     [参考](http://kresnik.wang/works/tech/2015/06/07/%E5%9C%A8github-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html)
 
 
-
-
-
 ## Jelly使用
 
 * 入门
@@ -93,11 +90,8 @@ description:
 
 ## 定制与插件
 
-
-
-
-
 [官网](http://jekyll.com.cn/docs/plugins/)
+
 [常见插件](http://wiki.jikexueyuan.com/project/jekyll/plugins.html)
 
 
@@ -137,27 +131,13 @@ http://www.jianshu.com/p/df46bca5889d
 
 [中国搜索引擎市场份额统计](http://gs.statcounter.com/search-engine-market-share/all/china)
 
-
-
 ## 添加sitemap
-
-```
----
-title : Sitemap
----
-{% for page in site.pages %}
-  {{site.url}}{{ page.url }}
-{% endfor %}
-{% for post in site.posts %}
-  {{site.url}}{{ post.url }}
-{% endfor %}
-```
-
 [google 添加sitemap](https://www.google.com/webmasters)
+
+添加的文件见"sitemap.txt"
 
 ## 使用超链接引用自身博文
 
 ```
 [博文]({{site.zhehua.home}}/2016/07/05/GitignoreSyntax.html)
-
 ```

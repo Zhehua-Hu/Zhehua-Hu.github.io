@@ -2,10 +2,16 @@
 layout: post
 title: "如何有效协作"
 category: 轻分享
-tags: 轻分享
+tags: 
+    轻分享
+    漫谈
 keywords: 
 description: 
 ---
+
+## 绪论
+
+
 
 # 资源共享
 
