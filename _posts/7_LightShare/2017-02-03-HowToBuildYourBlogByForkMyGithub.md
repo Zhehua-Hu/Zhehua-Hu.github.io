@@ -137,7 +137,13 @@ http://www.jianshu.com/p/df46bca5889d
 添加的文件见"sitemap.txt"
 
 ## 使用超链接引用自身博文
+[博文]({{site.zhehua.home}}/2016/07/05/GitignoreSyntax.html)
 
 ```
 [博文]({{site.zhehua.home}}/2016/07/05/GitignoreSyntax.html)
 ```
+
+## 参考
+[官网中文教程](http://jekyll.com.cn/docs/home/)
+
+[JavaScript 参考手册](http://www.w3school.com.cn/jsref/index.asp)

@@ -5,14 +5,15 @@
       <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-ronuded avatar" style="border-width:0px; border-color:#000"></a>
       <br><br><br><br>
       <ul class="nav nav-pills nav-stacked">
-        {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+        {% for category in site.categories %}     <!-- 这里是aside1的各栏-->
+
          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
-        <!--显示汉字-->
+        <!--标签、归档、关于：显示汉字-->
         <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>
         <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
         <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
-        <!--显示图标-->
+        <!--标签、归档、关于： 显示图标-->
         <!--<li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>-->
         <!--<li><a class="pjaxlink" href="/pages/archive.html"><i class="fa fa-archive fa-lg"></i></a></li>-->
         <!--<li><a class="pjaxlink" href="/pages/about.html"><i class="fa fa-user fa-lg"></i></a></li>-->

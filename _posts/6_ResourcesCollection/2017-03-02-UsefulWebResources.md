@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "常用网络工具与资"
+title: "常用网络工具与资源"
 category: 资源集
 tags: 资源集
 keywords: 
