@@ -147,3 +147,61 @@ http://www.jianshu.com/p/df46bca5889d
 [官网中文教程](http://jekyll.com.cn/docs/home/)
 
 [JavaScript 参考手册](http://www.w3school.com.cn/jsref/index.asp)
+
+
+## 未解之谜
+### 目录顺序排序代码
+
+```
+{ % for category in site.categories %}
+<li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+{ % endfor %}
+```
+
+其效果为
+
+```
+{% for category in site.categories %}
+<li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+{% endfor %}
+```
+
+### 逆序
+
+```
+{ % for category in site.categories reversed%}
+<li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+{ % endfor %}
+```
+
+其效果为
+
+```
+{% for category in site.categories reversed%}
+<li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+{% endfor %}
+```
+
+
+### 语法解析
+
+```
+｛｛ list|first ｝｝: 返回列表第一个元素
+
+｛｛ category[0] ｝｝ : 返回category第一个元素
+
+<a href=link>  </a> : 绝对跳转链接
+
+data-toggle="tab" : 以tab事件触发，终止了链接默认行为
+
+<li>  </li> ： 无序列表
+```
+
+但目前无法实现按任意顺序列出category目录
+
+以下英文的category也无法奏效
+```
+{ % for category in site.categories[cat] %}
+
+{ % for category in site.categories.cat %}
+```
