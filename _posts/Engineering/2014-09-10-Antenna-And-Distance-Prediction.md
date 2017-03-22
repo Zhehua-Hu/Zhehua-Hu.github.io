@@ -88,6 +88,8 @@ description:
 
 
 ### 基于Mathematica的无线链路预测
+[.nb下载]({{site.zhehua.files}}/无线链路距离预测.nb)
+
 
 <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
 <script type="text/javascript">
@@ -96,4 +98,3 @@ cdf.setDefaultContent('<a href="http://www.wolfram.com/cdf-player/"><img  src="{
 cdf.embed('{{site.zhehua.files}}/无线链路距离预测.cdf', 460, 574);
 </script>
 
-[.nb下载]({{site.zhehua.files}}/无线链路距离预测.nb)
