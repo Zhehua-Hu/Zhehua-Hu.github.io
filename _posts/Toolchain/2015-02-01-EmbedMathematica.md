@@ -8,7 +8,7 @@ keywords:
 description: 
 ---
 
-##绪论
+## 绪论
 
 CDF（Computable Document Format）是Mathematica提供的交互式插件，在强数学的笔记中，比IPython有优势。
 
