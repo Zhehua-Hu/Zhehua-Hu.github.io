@@ -55,6 +55,7 @@ virtualenv --help
 ```
 
 * 工作方式
+
 ```
 # 激活虚拟环境
 source ./newpy/bin/activate
@@ -72,6 +73,7 @@ deactive
 
 
 ### 安装flask
+
 ```
 pip install flask
 ```
