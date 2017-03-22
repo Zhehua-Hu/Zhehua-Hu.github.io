@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "搜索引擎"
+title: "搜索引擎高阶应用笔记"
 category: 工具链
 tags: 
     效率工具链
@@ -43,34 +43,32 @@ description:
 
 ### 常用具体命令笔记
 
-* info:www.baidu.com
-返回网站信息
+* info:  
+`info:<url>`返回网站信息
 
-* location  
+* location:  
 地点匹配
 
-* datarange  
+* datarange:  
 日期范围
-
-* group  
-组范围
 
 * cache:  
 `cache:<url>` 返回网页快照信息
 
-* source  
+* source:  
 指定源
 
 
-* weather  
+* weather:  
  天气相关
 
-* auther  
+* auther:  
 `author:<name>`
 
-* safesearch
-
+* safesearch:
+返回的结果会屏蔽掉某些敏感词
 
 * 命令过多，不一一说明
 
-
+---
+## [必应](cn.bing.com)
