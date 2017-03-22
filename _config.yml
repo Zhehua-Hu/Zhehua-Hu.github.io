@@ -15,9 +15,9 @@ markdown: kramdown
 zhehua:
   home: http://zhehua.info
   images: http://zhehua.info/assets/images
+  files: http://zhehua.info/assets/files
   emoji: http://zhehua.info/assets/images/emojis
-  mark1: 资源集
-  mark2: "资源集"
+
 
 # 作者信息
 author:
