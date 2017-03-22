@@ -44,7 +44,7 @@ description:
 ### 常用具体命令笔记
 
 * info:  
-`info:<url>`返回网站信息
+`info:<url>` 返回网站信息
 
 * location:  
 地点匹配
