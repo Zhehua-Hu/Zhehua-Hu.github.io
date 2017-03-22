@@ -1,15 +1,16 @@
 ---
 layout: post
-title: demo
-category: 
-tags: demo
+title: "搜索引擎"
+category: 工具链
+tags: 
+    效率工具链
 keywords: 
 description: 
 ---
 
 
 
-## Google Search Note
+## Google
 [官方教程](http://www.googleguide.com/advanced\_operators\_reference.html)
 
 ###  Logic
@@ -40,65 +41,34 @@ description:
 
 ![]({{site.zhehua.images}}/misc/google_search_operator.jpg)
 
-### 具体命令笔记
+### 常用具体命令笔记
 
 * info:www.baidu.com
+返回网站信息
 
-        1.  返回网站信息
+* location  
+地点匹配
 
-* link:www.pku.edu.cn不可加关键词
+* datarange  
+日期范围
 
-        1.  链接的网站
+* group  
+组范围
 
-* related网站结构类似（规模、行为等）
+* cache:  
+`cache:<url>` 返回网页快照信息
 
-        1.  related:www.baidu.com
+* source  
+指定源
 
-* define: blog
 
-        1.  这个查询将会返回Blog的定义
+* weather  
+ 天气相关
 
-* location
+* auther  
+`author:<name>`
 
-        1.  地点匹配
-
-* datarange:
-
-        1.  日期范围
-
-* group:
-
-        1.  组范围
-
-* movie:电影相关
-
-* cache:
-
-        1.  cache:www.efish.tk
-
-            1.  返回网页快照信息
-
-* source:
-
-        1.  指定源
-* stocks:
-
-        1.  股票相关
-
-* store:
-
-        1.  商店相关
-
-* weather:
-
-        1.  天气相关
-
-* auther
-
-        1.  author:john
-
-* safesearch:
-
+* safesearch
 
 
 * 命令过多，不一一说明
