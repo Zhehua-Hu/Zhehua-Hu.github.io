@@ -2,10 +2,14 @@
 layout: post
 title: "网络诊断与传输延迟命令：ping、traceroute"
 category: 工程录
-tags: demo
+tags: 
+    工程录
 keywords: 
 description: 
 ---
+
+Ping是Windows、Unix和Linux系统下的一个命令。ping也属于一个通信协议，是TCP/IP协议的一部分。利用“ping”命令可以检查网络是否连通，可以很好地帮助我们分析和判定网络故障。应用格式：Ping空格IP地址。
+
 
 Traceroute
 是使用跟踪数据包来诊断网络路由与传输延迟的工具，在linux上为Traceroute（与Traceroute6，IPv6版本），在windows上是tracert。
