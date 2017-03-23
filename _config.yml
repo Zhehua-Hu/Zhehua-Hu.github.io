@@ -14,6 +14,7 @@ markdown: kramdown
 # 我的宏定义
 zhehua:
   home: http://zhehua.info
+  github: http://github.com/Zhehua-Hu
   images: http://zhehua.info/assets/images
   files: http://zhehua.info/assets/files
   emoji: http://zhehua.info/assets/images/emojis
