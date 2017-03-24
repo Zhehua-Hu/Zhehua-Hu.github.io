@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "实时SLAM的未来, 深度学习 vs SLAM"
+title: "实时SLAM的未来, 深度学习 vs SLAM[译]"
 category: 轻分享
 tags: 
     轻分享
