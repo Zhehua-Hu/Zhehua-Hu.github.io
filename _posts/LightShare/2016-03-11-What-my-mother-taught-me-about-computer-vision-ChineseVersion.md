@@ -2,28 +2,45 @@
 layout: post
 title: "妈妈教我走向计算机视觉[译]"
 category: 轻分享
-tags: demo
+tags: 
+    宾主集赋
 keywords: 
 description: 
 ---
 
+## 简介
+博客作者 Tomasz Malisiewicz 是MIT Computer Science and Artificial Intelligence 
+Laboratory 的博士后，卡内基梅隆大学Robotics的PhD，Physics/CS的本科。是vision.ai的联合创始人，
+他的博客主要内容一览（截至今日）：
 
+* 2015嵌入式视觉峰会：Dyson 360 Eye与 百度深度学习
 
-2015嵌入式视觉峰会：Dyson 360 Eye与 百度深度学习
-ICCV 2015——21篇最热论文
-Mobileye将引入深度学习到每辆新车中
-三个维度思考机器学习系统
-从特征描述子到深度学习：回顾20年计算机视觉
-实时SLAM的未来,深度学习 vs SLAM
-最佳视觉数据应用
-深入无底洞：CVPR 2015
-深度学习2015淘金热
-深度学习 Vs 大数据
-深度学习 Vs 机器学习 Vs 模式识别
-深度学习 Vs 概率图模型 Vs 逻辑学
+* ICCV 2015——21篇最热论文
 
+* Mobileye将引入深度学习到每辆新车中
 
+* 三个维度思考机器学习系统
 
+* 从特征描述子到深度学习：回顾20年计算机视觉
+
+* 实时SLAM的未来,深度学习 vs SLAM
+
+* 最佳视觉数据应用
+
+* 深入无底洞：CVPR 2015
+
+* 深度学习2015淘金热
+
+* 深度学习 Vs 大数据
+
+* 深度学习 Vs 机器学习 Vs 模式识别
+
+* 深度学习 Vs 概率图模型 Vs 逻辑学
+
+---
+下文分享给读者
+
+## 译文《妈妈教我走向计算机视觉》
 “醒来吧，*Tomek。背上行李，我们朝美国出发。“*
 
 这是某一天，妈妈把我从熟睡中唤起时，萦绕在我耳边的话语。
@@ -75,8 +92,8 @@ Mobileye将引入深度学习到每辆新车中
 
 “醒来吧，*计算机视觉。背上行李，我们走向每户人家。“*
 
-原文如下
-
+---
+## 原文[链接](http://www.computervisionblog.com/2013/12/what-my-mother-taught-me-about-computer.html?utm_source=tuicool&utm_medium=referral)
 **What my mother taught me about computer vision**
 
 *“Wake up, Tomek.  Pack your bags.  We’re moving to America.” *
