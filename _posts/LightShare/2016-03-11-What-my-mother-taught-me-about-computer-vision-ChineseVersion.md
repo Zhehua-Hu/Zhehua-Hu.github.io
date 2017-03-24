@@ -9,8 +9,10 @@ description:
 ---
 
 ## 简介
-博客作者 Tomasz Malisiewicz 是MIT Computer Science and Artificial Intelligence 
-Laboratory 的博士后，卡内基梅隆大学Robotics的PhD，Physics/CS的本科。是vision.ai的联合创始人，
+博客作者[Tomasz Malisiewicz](http://www.computervisionblog.com/) 是MIT Computer Science and Artificial Intelligence 
+Laboratory 的博士后，卡内基梅隆大学Robotics的PhD，Physics/CS的本科。
+
+他是vision.ai的联合创始人，
 他的博客主要内容一览（截至今日）：
 
 * 2015嵌入式视觉峰会：Dyson 360 Eye与 百度深度学习
