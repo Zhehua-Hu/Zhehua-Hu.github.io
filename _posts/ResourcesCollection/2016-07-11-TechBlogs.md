@@ -16,7 +16,7 @@ description:
 
 
 ### [阮一峰](http://www.ruanyifeng.com)
-
+思考的程序家
 
 
 ### [结构之法 算法之道](http://blog.csdn.net/v_JULY_v/article/category/769275)
@@ -24,6 +24,7 @@ description:
 
 
 
+### [李茂-熟悉python与硬件](http://www.crifan.com/)
 
 
 

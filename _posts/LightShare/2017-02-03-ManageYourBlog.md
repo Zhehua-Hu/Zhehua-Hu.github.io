@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "博客之事(四)：博客管理与博文发布"
+title: "博客之事(三)：博客管理与博文发布"
 category: 轻分享
 tags: 
     轻分享
@@ -58,7 +58,12 @@ convert *.png output.gif
 [Online Tool](https://word-to-markdown.herokuapp.com/)
 
 
-## 博文分享
+## 分享
+
+### 打印
+firefox，chrome经测试可以打印
+
+IE显示不正常，打印正常
 
 ### 微信
 * 用微信打开博文

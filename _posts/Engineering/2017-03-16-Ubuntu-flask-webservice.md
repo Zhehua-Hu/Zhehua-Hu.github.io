@@ -158,21 +158,34 @@ curl -u ok:python -i -H "Content-Type: application/json" \
 http://tagea.ngrok.cc/api
 
 curl -u ok:python -i -H "Content-Type: application/json" \
--X POST -d '{"add1":3.1415, "add2":3.1, "crmR: "genvict01"}' \
+-X POST -d '{"crmR": "genvict01", "name": "crm99", "id": "12345678", "add1": 3.1415, "add2":3.1}' \
 http://tagea.ngrok.cc/api
 
-??? 400
-
-curl -u ok:python -i -H "Content-Type: application/json" \
--X POST -d '{"crmR:" genvict01", "name":" crm99", "id":"12345678", \
-"picurl":"http://zhehua.info/assets/images/misc/Selection_001.png", \
-"add1":3.1415, "add2":3.1}' \
-http://tagea.ngrok.cc/api
 
 curl -u ok:python -i -H "Content-Type: application/json" \
--X POST -d '{"picurl":"http://zhehua.info/assets/images/misc/Selection_001.png", \
-"add1":3.1415, "add2":3.1}' \
+-X POST -d '{"crmR": "genvict01", "name": "crm99", "id": "12345678", "picurl": "http://zhehua.info/assets/images/misc/Selection_001.png", "add1": 3.1415, "add2":3.1}' \
 http://tagea.ngrok.cc/api
+
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"crmR": "genvict01", "name": "crm99", "carid": "12345678", 
+"picurl": "http://zhehua.info/assets/images/misc/Selection_001.png", 
+"mode": "request", rt": "default", "info": "default"}' \
+http://tagea.ngrok.cc/api
+
+
+#-----
+
+curl -u ok:python -i http://tagea.ngrok.cc/api
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"id": 1, "crmR": "genvict01", "name": "crm99", "carid": "12345678", 
+"picurl": "http://zhehua.info/assets/images/misc/Selection_001.png",
+"mode": "request", "rt": "default", "info": "default"}' \
+http://tagea.ngrok.cc/api
+
+
+
 ```
 
 ##
