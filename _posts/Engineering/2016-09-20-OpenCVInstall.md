@@ -8,13 +8,6 @@ description:
 ---
 
 
-
-
-
-
-
-
-
 ## 安装依赖
 
 ```
@@ -68,6 +61,7 @@ gedit ../modules/cudalegacy/src/graphcuts.cpp
 ```
 
 ### 编译并安装
+
 ```
 make -j12
 sudo make install -j12
