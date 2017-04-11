@@ -88,6 +88,5 @@ copy to opencv/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/
 sudo cp ~/linuxware/OPENCV3_1n/opencv-3.1.0/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/ippicv_lnx/lib/intel64/libippicv.a /usr/local/lib
  
 ### Ubuntu16.04 OpenCV3绑定python3.x
-<http://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on
--ubuntu/>
+
   
