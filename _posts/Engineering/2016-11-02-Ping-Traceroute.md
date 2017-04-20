@@ -79,7 +79,4 @@ Windows7下tracert测试：
 小结：
 ------
 
-测试了Linux/Windows系统下诊断网络路由与传输延迟的工具，熟悉了traceroute与tracert的使用方式与基本原理，加深了对《交通信息交互与处理》课程的理解。
-
-
-
+测试了Linux/Windows系统下诊断网络路由与传输延迟的工具，熟悉了traceroute与tracert的使用方式与基本原理

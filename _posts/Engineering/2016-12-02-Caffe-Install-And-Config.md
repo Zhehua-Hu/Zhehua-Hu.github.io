@@ -1,8 +1,8 @@
 ---
 layout: post
-title: demo
-category: 
-tags: demo
+title: "Caffe安装笔记"
+category: 工程录
+tags: 深度学习
 keywords: 
 description: 
 ---
