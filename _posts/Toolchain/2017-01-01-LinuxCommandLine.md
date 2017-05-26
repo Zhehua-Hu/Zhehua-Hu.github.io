@@ -247,6 +247,12 @@ ls -lR|grep "^-"|wc -l
 
 
 
+### change 
 
 
+sudo  gedit /etc/passwd
+	do not change /home/oldfolder
 
+sudo  gedit /etc/shadow
+
+visudo: newuser ALL...
