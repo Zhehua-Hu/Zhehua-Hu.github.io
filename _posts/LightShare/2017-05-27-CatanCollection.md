@@ -15,5 +15,5 @@ description:
 [简易在线游戏](http://jerold.github.io/Catan)
 
 
-##　推荐骰子APP
+## 推荐骰子APP
 [3D骰子](https://play.google.com/store/apps/details?id=fr.sevenpixels.dice&hl=zh-CN)
