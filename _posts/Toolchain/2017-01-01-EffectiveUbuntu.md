@@ -170,7 +170,10 @@ cp /home/zhehua/.config/sublime-text-3/Packages/User/Preferences.sublime-setting
         ```
         sudo ./aliedit.sh
         ```
-
+    - hotkey
+    	- 关闭标签： Ctrl+W
+    	- 前一个标签页： Ctrl+Shift+Tab
+    	- 下一个标签页： Ctrl+Tab 
 # Coding Environment
 - git
 ```
