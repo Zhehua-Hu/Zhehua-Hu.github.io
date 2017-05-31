@@ -7,6 +7,9 @@ keywords:
 description: 
 ---
 
+## 简介
+卡坦岛是一款策略类回合制桌游。
+
 
 [官网](http://www.catan.com)
 
@@ -16,4 +19,5 @@ description:
 
 
 ## 推荐骰子APP
+
 [3D骰子](https://play.google.com/store/apps/details?id=fr.sevenpixels.dice&hl=zh-CN)
