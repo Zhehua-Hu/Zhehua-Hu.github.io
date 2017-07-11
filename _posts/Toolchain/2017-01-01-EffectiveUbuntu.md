@@ -615,6 +615,18 @@ sudo apt-get install smplayer vlc shutter kazam audacious font-manager goldendic
         ```
 		set in icon: Scrolling mode
 
+- HandBreake
+    - 说明： 跨平台免费视频压缩软件，界面美观，效果极好
+    - 安装：
+            ```
+            sudo add-apt-repository ppa:stebbins/handbrake-releases
+            sudo apt-get update
+            sudo apt-get install handbrake-gtk
+            sudo apt-get install handbrake-cli
+            ```
+    - 使用：
+        搜索栏“handbrake”
+
 - Font Manager
  	- 说明：view, install & manage fonts
     - 安装：

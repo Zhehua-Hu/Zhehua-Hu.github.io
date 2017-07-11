@@ -35,7 +35,7 @@ description:
 
 [http://www.gaopinimages.com/index](http://www.gaopinimages.com/index)
 
-[www.lifeofpix.com](www.lifeofpix.com)
+[http://www.lifeofpix.com](http://www.lifeofpix.com)
 
 [http://www.gettyimages.co.uk/](http://www.gettyimages.co.uk/)
 
