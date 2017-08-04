@@ -16,16 +16,11 @@ description:
 
 -   每一次被打，疼痛是时间t的函数**【h(t)，pulse response】,**
 
->   比如疼痛短时间上升到最高，然后逐渐减弱，
+-   疼痛短时间上升到最高，然后逐渐减弱，
 
 -   求施以任意的打击【x(t)】后，你的疼痛值。
 
-![]({{site.zhehua.images}}/conv_imgs/image2.png)
 
->   x(t)
-
-
-![]({{site.zhehua.images}}/conv_imgs/e8622eb9315e89b11f940e645eda7b1f.png)
 
 ## 梳理
 
@@ -35,7 +30,6 @@ description:
 ![]({{site.zhehua.images}}/conv_imgs/c957a6888e3c62534f6bebb5a8cea117.png)
 
  
-对 于 线 性 系 统 而 言 ， 系 统 的 输 出 (O) 是 任 意 输 入 x(t) 与 系 统 脉 冲 响 应 函 数 h （ 0 的 卷 积 · (1) 将 信 号 ） 分 解 为 许 多 宽 度 为 At 的 窄 条 面 积 之 和 ， t=nAt 时 的 第 n 个 窄 条 的 高 度 为 佃 \^ 0 在 At 趋 近 于 零 的 情 况 下 ， 窄 条 可 以 看 作 是 强 度 等 于 窄 条 面 积 的 脉 冲 “ x(nåt)åt 
 ![]({{site.zhehua.images}}/conv_imgs/cc12643de6d329eed39022639c6518fb.png)
 
  
@@ -69,8 +63,7 @@ description:
 **卷积为 ：在输入信号的每个位置，叠加一个单位响应，最后产生输出信号**
 
  
-
-**Motion Demo**
+## Motion Demo**
 
 ![]({{site.zhehua.images}}/conv_imgs/56c93999c75d2b6668eb1854a74cd36b.png)
 
@@ -101,7 +94,9 @@ description:
 ![你 要 向 右 走 ． 《 我 也 向 右 走 有 正 的 和 关 自 由 ， 与 你 无 关 不 相 关 你 要 向 右 走 ， 我 就 向 左 走 J 有 负 的 相 关 图 3 ． 8 相 关 函 数 的 含 又 ]({{site.zhehua.images}}/conv_imgs/d0383e88a9f6f5fc08a7c54ece2e04a9.png)
 
 ####  2.离散变量的相关描述
-1 变 量 相 关 的 概 念 统 计 学 中 用 相 关 系 数 来 描 述 变 量 x ， y 之 间 的 相 关 性 。 是 两 随 机 变 之 积 的 数 学 期 望 ， 称 为 相 关 性 ， 表 征 了 x 、 y 之 间 的 关 联 程 度 。
+ 
+变量相关的概念统计学中用相关系数来描述变量x，y之间的相关性.
+
 ![]({{site.zhehua.images}}/conv_imgs/9ce8ff8d44091ab4728e5576eed9200d.png)
 
  
@@ -118,20 +113,12 @@ description:
 
 -   同一个函数的“互相关”为“自相关”
 
->   [{{site.zhehua.images}}/conv_imgs/image19.png]({{site.zhehua.images}}/conv_imgs/image19.png)
+>   []({{site.zhehua.images}}/conv_imgs/image19.png)
 
->   算 法 ： 令 x （ t 〕 、 y 〈 t ） 二 个 信 号 之 间
->   产 生 时 差 “ 再 相 乘 和 积 分 ， 就 可 以 得 到 时 刻 二 个 信 号 的 相 关
->   性 。 X(t)y(t-T) 积 ， 倒 乘 法 器 分 时 延 器 自 相 关 函 数 ： x (t) =y
->   (t)
+>   算法：令x()t), y(t)二个信号之间产生时差“再相乘和积分，就可以得到时刻二个信号的相关性.
 
->    
 
->   [{{site.zhehua.images}}/conv_imgs/image20.png]({{site.zhehua.images}}/conv_imgs/image20.png)
-
->   相 关 分 析 的 工 程 应 用 案 例 ： 机 械 加 工 表 面
->   粗 糙 度 自 相 关 分 析 被 測 工 件 相 关 分 析 性 质 3 ， 性 质 4 ： 兮 提
->   取 出 回 转 误 差 等 周 期 性 的 故 障 源 ；
+>   相关分析的工程应用案例：机械加工表面粗糙度自相关分析被測工件相关分析,能计算回转误差等周期性的故障源 ；
 
  
 
