@@ -27,17 +27,17 @@ description:
 >   x(t)
 
 
-![](media/e8622eb9315e89b11f940e645eda7b1f.png)
+![]({{site.zhehua.images}}/conv_imgs/e8622eb9315e89b11f940e645eda7b1f.png)
 
 ## 梳理
 
  
 在 系 统 分 析 中 ， 系 统 输 入 / 输 出 和 系 统 特 性 的 作 用 关 系 在 时 间 域 就 体 现 为 卷 积 积 分 的 关 系
-![ [ 迎 0 ](media/c957a6888e3c62534f6bebb5a8cea117.png)
+![]({{site.zhehua.images}}/conv_imgs/c957a6888e3c62534f6bebb5a8cea117.png)
 
  
 
-![对 于 线 性 系 统 而 言 ， 系 统 的 输 出 (O) 是 任 意 输 入 x(t) 与 系 统 脉 冲 响 应 函 数 h （ 0 的 卷 积 · (1) 将 信 号 ） 分 解 为 许 多 宽 度 为 At 的 窄 条 面 积 之 和 ， t=nAt 时 的 第 n 个 窄 条 的 高 度 为 佃 \^ 0 在 At 趋 近 于 零 的 情 况 下 ， 窄 条 可 以 看 作 是 强 度 等 于 窄 条 面 积 的 脉 冲 “ x(nåt)åt ](media/cc12643de6d329eed39022639c6518fb.png)
+![对 于 线 性 系 统 而 言 ， 系 统 的 输 出 (O) 是 任 意 输 入 x(t) 与 系 统 脉 冲 响 应 函 数 h （ 0 的 卷 积 · (1) 将 信 号 ） 分 解 为 许 多 宽 度 为 At 的 窄 条 面 积 之 和 ， t=nAt 时 的 第 n 个 窄 条 的 高 度 为 佃 \^ 0 在 At 趋 近 于 零 的 情 况 下 ， 窄 条 可 以 看 作 是 强 度 等 于 窄 条 面 积 的 脉 冲 “ x(nåt)åt ]({{site.zhehua.images}}/conv_imgs/cc12643de6d329eed39022639c6518fb.png)
 
  
 
@@ -45,17 +45,17 @@ description:
 
 -   **任意输入都可以离散为一系列点【pulse】**
 
-![（ 2 ） 根 据 线 性 系 统 特 性 ， 在 t ： 黿 t 时 刻 ， 窄 条 脉 冲 引 起 的 响 应 为 ． № ' 砌 凼 0 ' 砌 0 ](media/1518275aff92c8195311450d49a8fb40.png)
+![（ 2 ） 根 据 线 性 系 统 特 性 ， 在 t ： 黿 t 时 刻 ， 窄 条 脉 冲 引 起 的 响 应 为 ． № ' 砌 凼 0 ' 砌 0 ]({{site.zhehua.images}}/conv_imgs/1518275aff92c8195311450d49a8fb40.png)
 
  
 
-![（ 3 ） 根 据 线 性 系 统 的 叠 加 原 理 ， 各 脉 冲 引 起 的 响 应 之 和 即 为 输 出 y （ 0 巛 的 (t)A 到 地 一 nAt) 0 ](media/acd09fc48dafaac5e484a96172fe0864.png)
+![（ 3 ） 根 据 线 性 系 统 的 叠 加 原 理 ， 各 脉 冲 引 起 的 响 应 之 和 即 为 输 出 y （ 0 巛 的 (t)A 到 地 一 nAt) 0 ]({{site.zhehua.images}}/conv_imgs/acd09fc48dafaac5e484a96172fe0864.png)
 
  
 
 **当△t -\> ∞**
 
-![y(t) x(r)h(t r)dr h(t) ](media/78f20016ff09a77f51e9dc450e14e643.png)
+![y(t) x(r)h(t r)dr h(t) ]({{site.zhehua.images}}/conv_imgs/78f20016ff09a77f51e9dc450e14e643.png)
 
 -   **其中h(t-τ) ,τ是零时刻冲击响应 h(0）右移的距离**
 
@@ -73,24 +73,24 @@ description:
 
 **Motion Demo**
 
-![](media/56c93999c75d2b6668eb1854a74cd36b.png)
+![]({{site.zhehua.images}}/conv_imgs/56c93999c75d2b6668eb1854a74cd36b.png)
 
  
 
-![ııııııııııı III ı ](media/86bcc9d2397f6710781e3fc72762fefe.png)
+![ııııııııııı III ı ]({{site.zhehua.images}}/conv_imgs/86bcc9d2397f6710781e3fc72762fefe.png)
 
  
 
-![](media/25707d9f37d7f2c447eff3b32e597e9f.png)
+![]({{site.zhehua.images}}/conv_imgs/25707d9f37d7f2c447eff3b32e597e9f.png)
 
  
 
-![](media/e45b0036eb9c22ccd98418fc14cb6249.png)
+![]({{site.zhehua.images}}/conv_imgs/e45b0036eb9c22ccd98418fc14cb6249.png)
 
  
 https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.gif
 
-![](media/Convolution_of_box_signal_with_itself2.gif)
+![]({{site.zhehua.images}}/conv_imgs/Convolution_of_box_signal_with_itself2.gif)
 
 
  
@@ -101,11 +101,11 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
  
 
-![你 要 向 右 走 ． 《 我 也 向 右 走 有 正 的 和 关 自 由 ， 与 你 无 关 不 相 关 你 要 向 右 走 ， 我 就 向 左 走 J 有 负 的 相 关 图 3 ． 8 相 关 函 数 的 含 又 ](media/d0383e88a9f6f5fc08a7c54ece2e04a9.png)
+![你 要 向 右 走 ． 《 我 也 向 右 走 有 正 的 和 关 自 由 ， 与 你 无 关 不 相 关 你 要 向 右 走 ， 我 就 向 左 走 J 有 负 的 相 关 图 3 ． 8 相 关 函 数 的 含 又 ]({{site.zhehua.images}}/conv_imgs/d0383e88a9f6f5fc08a7c54ece2e04a9.png)
 
 ####  2.离散变量的相关描述
 
-![1 变 量 相 关 的 概 念 统 计 学 中 用 相 关 系 数 来 描 述 变 量 x ， y 之 间 的 相 关 性 。 是 两 随 机 变 之 积 的 数 学 期 望 ， 称 为 相 关 性 ， 表 征 了 x 、 y 之 间 的 关 联 程 度 。 耳000\@一巧， ） ] ） 2 〔 0 ） 2 ] } 1 ](media/9ce8ff8d44091ab4728e5576eed9200d.png)
+![1 变 量 相 关 的 概 念 统 计 学 中 用 相 关 系 数 来 描 述 变 量 x ， y 之 间 的 相 关 性 。 是 两 随 机 变 之 积 的 数 学 期 望 ， 称 为 相 关 性 ， 表 征 了 x 、 y 之 间 的 关 联 程 度 。 耳000\@一巧， ） ] ） 2 〔 0 ） 2 ] } 1 ]({{site.zhehua.images}}/conv_imgs/9ce8ff8d44091ab4728e5576eed9200d.png)
 
  
 
@@ -113,11 +113,11 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
 ####  连续/函数相关
 
-![如 果 所 研 究 的 变 量 x ， y 是 与 时 间 有 关 的 函 数 ， 即 x (t) 与 y (t) ： x (t) ](media/c6f10a75d7efc0fe0995ea661874a415.png)
+![如 果 所 研 究 的 变 量 x ， y 是 与 时 间 有 关 的 函 数 ， 即 x (t) 与 y (t) ： x (t) ]({{site.zhehua.images}}/conv_imgs/c6f10a75d7efc0fe0995ea661874a415.png)
 
  
 
-![这 时 可 以 引 入 一 个 与 时 间 有 关 的 量 ， 称 为 函 数 的 相 关 系 数 ， 简 称 相 关 函 数 ， 并 有 ： [ 了 谳 了 ，2\@渖]。2 相 关 函 数 反 映 了 二 个 信 号 在 时 移 中 的 相 关 性 。 x(t) y (t) ](media/3b26c95ccea4ff9d549110d575d08ac8.png)
+![这 时 可 以 引 入 一 个 与 时 间 有 关 的 量 ， 称 为 函 数 的 相 关 系 数 ， 简 称 相 关 函 数 ， 并 有 ： [ 了 谳 了 ，2\@渖]。2 相 关 函 数 反 映 了 二 个 信 号 在 时 移 中 的 相 关 性 。 x(t) y (t) ]({{site.zhehua.images}}/conv_imgs/3b26c95ccea4ff9d549110d575d08ac8.png)
 
 -   同一个函数的“互相关”为“自相关”
 
@@ -138,11 +138,11 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
  
 
-![案 例 ： 自 相 关 测 转 速 理 想 信 号 干 扰 信 号 性 质 3 ， 性 质 4 ： 提 取 周 期 性 转 速 成 分 。 ](media/1d49e7fac5296612d33aac2a6545cf0e.png)
+![案 例 ： 自 相 关 测 转 速 理 想 信 号 干 扰 信 号 性 质 3 ， 性 质 4 ： 提 取 周 期 性 转 速 成 分 。 ]({{site.zhehua.images}}/conv_imgs/1d49e7fac5296612d33aac2a6545cf0e.png)
 
  
 
-![案 例 ： 地 下 输 油 管 道 漏 损 位 置 的 探 测 ](media/efb08dfc2369e0251ddefa372a1e5421.png)
+![案 例 ： 地 下 输 油 管 道 漏 损 位 置 的 探 测 ]({{site.zhehua.images}}/conv_imgs/efb08dfc2369e0251ddefa372a1e5421.png)
 
  
 
@@ -154,19 +154,19 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
 >   离散
 
-![+ u J 区 ](media/a51f7199a24ff06a00f17a2160be6999.png)
+![+ u J 区 ]({{site.zhehua.images}}/conv_imgs/a51f7199a24ff06a00f17a2160be6999.png)
 
 >   连续
 
-![](media/79ecd49527bf8eaaeef207bd2c30921f.png)
+![]({{site.zhehua.images}}/conv_imgs/79ecd49527bf8eaaeef207bd2c30921f.png)
 
  
 
-![相 关 函 数 的 性 质 相 关 函 数 描 述 了 两 个 信 号 间 或 信 号 自 身 不 同 时 刻 的 相 似 程 度 ， 通 过 相 关 分 析 可 以 发 现 信 号 中 许 多 有 规 律 的 东 西 。 (1) 自 相 关 函 数 是 t 的 偶 函 数 ， R (t) 一 t 〕 ； （ 2 ） 当 亻 = 0 时 ， 自 相 关 函 数 具 有 最 大 值 。 （ 3 ） 周 期 信 号 的 自 相 关 函 数 仍 然 是 同 頻 率 的 周 期 信 号 ， 但 不 保 留 原 信 号 的 相 位 信 息 。 （ 4 ） 随 机 噪 声 信 号 的 自 相 关 函 数 将 随 t 的 增 大 快 速 衰 减 。 ](media/215ddbaad01f579dfe8778ffea13cfbd.png)
+![相 关 函 数 的 性 质 相 关 函 数 描 述 了 两 个 信 号 间 或 信 号 自 身 不 同 时 刻 的 相 似 程 度 ， 通 过 相 关 分 析 可 以 发 现 信 号 中 许 多 有 规 律 的 东 西 。 (1) 自 相 关 函 数 是 t 的 偶 函 数 ， R (t) 一 t 〕 ； （ 2 ） 当 亻 = 0 时 ， 自 相 关 函 数 具 有 最 大 值 。 （ 3 ） 周 期 信 号 的 自 相 关 函 数 仍 然 是 同 頻 率 的 周 期 信 号 ， 但 不 保 留 原 信 号 的 相 位 信 息 。 （ 4 ） 随 机 噪 声 信 号 的 自 相 关 函 数 将 随 t 的 增 大 快 速 衰 减 。 ]({{site.zhehua.images}}/conv_imgs/215ddbaad01f579dfe8778ffea13cfbd.png)
 
  
 
-![（ 5 ） 两 周 期 信 号 的 互 相 关 函 数 仍 然 是 同 频 率 的 周 期 信 号 ， 且 保 留 原 了 信 号 的 相 位 信 息 。 （ 6 ） 两 个 非 同 頻 率 的 周 期 信 号 互 不 相 关 。 ](media/0799bc89e0064077007ce5e4f9e97aaf.png)
+![（ 5 ） 两 周 期 信 号 的 互 相 关 函 数 仍 然 是 同 频 率 的 周 期 信 号 ， 且 保 留 原 了 信 号 的 相 位 信 息 。 （ 6 ） 两 个 非 同 頻 率 的 周 期 信 号 互 不 相 关 。 ]({{site.zhehua.images}}/conv_imgs/0799bc89e0064077007ce5e4f9e97aaf.png)
 
  
 
@@ -174,7 +174,7 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
 ## 小结
 
-![Convolution Cross-correlation Autocorrelation مكالكالك ك «اككلا ميك ح ل ه لم تلا ه هلا ل ](media/d763c3a58c825b2dc61425f7c7d50b75.png)
+![Convolution Cross-correlation Autocorrelation مكالكالك ك «اككلا ميك ح ل ه لم تلا ه هلا ل ]({{site.zhehua.images}}/conv_imgs/d763c3a58c825b2dc61425f7c7d50b75.png)
 
  
 
@@ -184,6 +184,6 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
 二维引入
 
-![Symmetric Kernel Convolution is comrnutative. So, f (x, y) \* lc\@, y) k(u, v) f (x — u, y — v) du dv Substituting —u and v —v into Eq. 9 gives y) \* k(x, y) f (x + [1, y + v) —v) d" dv Since k is symmetric, i.e., y) —y), we obtain f (a: + g, y + v) k(/L, v) (1/1 dv (8) (9) (10) (11) hus convolution is e ual to cross correlation if kernel is s mmetric. ](media/ba95a1781f06287f20317529ca049149.png)
+![Symmetric Kernel Convolution is comrnutative. So, f (x, y) \* lc\@, y) k(u, v) f (x — u, y — v) du dv Substituting —u and v —v into Eq. 9 gives y) \* k(x, y) f (x + [1, y + v) —v) d" dv Since k is symmetric, i.e., y) —y), we obtain f (a: + g, y + v) k(/L, v) (1/1 dv (8) (9) (10) (11) hus convolution is e ual to cross correlation if kernel is s mmetric. ]({{site.zhehua.images}}/conv_imgs/ba95a1781f06287f20317529ca049149.png)
 
  
