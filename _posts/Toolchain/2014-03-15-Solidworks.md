@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "三维建模软件：Solidworks"
-category: 
-tags: demo
+category: 工具链
+tags: 无标签类
 keywords: 
 description: 
 ---
