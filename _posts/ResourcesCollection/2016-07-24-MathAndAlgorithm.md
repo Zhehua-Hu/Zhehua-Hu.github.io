@@ -7,10 +7,14 @@ keywords:
 description: 
 ---
 
-## 绪论
+## 善用轮子
+[searchcode](https://searchcode.com/)
 
+[Awesome Awesomeness](https://github.com/bayandin/awesome-awesomeness)
 
-可视化方法能加速理解
+[Python 资源大全中文版](https://github.com/jobbole/awesome-python-cn)
+
+## 可视化方法能加速理解
 
 ---
 ## 数学

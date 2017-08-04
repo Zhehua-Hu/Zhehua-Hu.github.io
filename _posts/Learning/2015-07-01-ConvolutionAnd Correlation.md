@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "卷积与相关 —— Convolution & Correlation"
+title: "卷积与相关: Convolution & Correlation"
 category: 读学观
 tags: 
     读学观
