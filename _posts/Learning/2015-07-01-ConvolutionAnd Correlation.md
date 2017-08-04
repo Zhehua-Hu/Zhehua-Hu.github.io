@@ -76,7 +76,7 @@ description:
 
  
 
-![ııııııııııı III ı ]({{site.zhehua.images}}/conv_imgs/86bcc9d2397f6710781e3fc72762fefe.png)
+![]({{site.zhehua.images}}/conv_imgs/86bcc9d2397f6710781e3fc72762fefe.png)
 
  
 
@@ -87,8 +87,6 @@ description:
 ![]({{site.zhehua.images}}/conv_imgs/e45b0036eb9c22ccd98418fc14cb6249.png)
 
  
-https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.gif
-
 ![]({{site.zhehua.images}}/conv_imgs/Convolution_of_box_signal_with_itself2.gif)
 
 
@@ -103,8 +101,8 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 ![你 要 向 右 走 ． 《 我 也 向 右 走 有 正 的 和 关 自 由 ， 与 你 无 关 不 相 关 你 要 向 右 走 ， 我 就 向 左 走 J 有 负 的 相 关 图 3 ． 8 相 关 函 数 的 含 又 ]({{site.zhehua.images}}/conv_imgs/d0383e88a9f6f5fc08a7c54ece2e04a9.png)
 
 ####  2.离散变量的相关描述
-
-![1 变 量 相 关 的 概 念 统 计 学 中 用 相 关 系 数 来 描 述 变 量 x ， y 之 间 的 相 关 性 。 是 两 随 机 变 之 积 的 数 学 期 望 ， 称 为 相 关 性 ， 表 征 了 x 、 y 之 间 的 关 联 程 度 。 耳000\@一巧， ） ] ） 2 〔 0 ） 2 ] } 1 ]({{site.zhehua.images}}/conv_imgs/9ce8ff8d44091ab4728e5576eed9200d.png)
+1 变 量 相 关 的 概 念 统 计 学 中 用 相 关 系 数 来 描 述 变 量 x ， y 之 间 的 相 关 性 。 是 两 随 机 变 之 积 的 数 学 期 望 ， 称 为 相 关 性 ， 表 征 了 x 、 y 之 间 的 关 联 程 度 。
+![]({{site.zhehua.images}}/conv_imgs/9ce8ff8d44091ab4728e5576eed9200d.png)
 
  
 
@@ -149,8 +147,6 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
 ####  数学表达
 
- 
-
 >   离散
 
 ![+ u J 区 ]({{site.zhehua.images}}/conv_imgs/a51f7199a24ff06a00f17a2160be6999.png)
@@ -168,7 +164,9 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 ![（ 5 ） 两 周 期 信 号 的 互 相 关 函 数 仍 然 是 同 频 率 的 周 期 信 号 ， 且 保 留 原 了 信 号 的 相 位 信 息 。 （ 6 ） 两 个 非 同 頻 率 的 周 期 信 号 互 不 相 关 。 ]({{site.zhehua.images}}/conv_imgs/0799bc89e0064077007ce5e4f9e97aaf.png)
 
  
+#### 二维引入
 
+![]({{site.zhehua.images}}/conv_imgs/ba95a1781f06287f20317529ca049149.png)
  
 
 ## 小结
@@ -181,8 +179,6 @@ https://commons.wikimedia.org/wiki/File:Convolution_of_box_signal_with_itself2.g
 
  
 
-二维引入
 
-![Symmetric Kernel Convolution is comrnutative. So, f (x, y) \* lc\@, y) k(u, v) f (x — u, y — v) du dv Substituting —u and v —v into Eq. 9 gives y) \* k(x, y) f (x + [1, y + v) —v) d" dv Since k is symmetric, i.e., y) —y), we obtain f (a: + g, y + v) k(/L, v) (1/1 dv (8) (9) (10) (11) hus convolution is e ual to cross correlation if kernel is s mmetric. ]({{site.zhehua.images}}/conv_imgs/ba95a1781f06287f20317529ca049149.png)
 
  
