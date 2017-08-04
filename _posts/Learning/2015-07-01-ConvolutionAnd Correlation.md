@@ -18,8 +18,6 @@ description:
 
 >   比如疼痛短时间上升到最高，然后逐渐减弱，
 
-![]({{site.zhehua.images}}/conv_imgs/image1.png)
-
 -   求施以任意的打击【x(t)】后，你的疼痛值。
 
 ![]({{site.zhehua.images}}/conv_imgs/image2.png)
@@ -32,12 +30,13 @@ description:
 ## 梳理
 
  
-在 系 统 分 析 中 ， 系 统 输 入 / 输 出 和 系 统 特 性 的 作 用 关 系 在 时 间 域 就 体 现 为 卷 积 积 分 的 关 系
+在系统分析中， 系统输入/输出和系统特性的作用关系在时间域就体现为卷积积分的关系
+
 ![]({{site.zhehua.images}}/conv_imgs/c957a6888e3c62534f6bebb5a8cea117.png)
 
  
-
-![对 于 线 性 系 统 而 言 ， 系 统 的 输 出 (O) 是 任 意 输 入 x(t) 与 系 统 脉 冲 响 应 函 数 h （ 0 的 卷 积 · (1) 将 信 号 ） 分 解 为 许 多 宽 度 为 At 的 窄 条 面 积 之 和 ， t=nAt 时 的 第 n 个 窄 条 的 高 度 为 佃 \^ 0 在 At 趋 近 于 零 的 情 况 下 ， 窄 条 可 以 看 作 是 强 度 等 于 窄 条 面 积 的 脉 冲 “ x(nåt)åt ]({{site.zhehua.images}}/conv_imgs/cc12643de6d329eed39022639c6518fb.png)
+对 于 线 性 系 统 而 言 ， 系 统 的 输 出 (O) 是 任 意 输 入 x(t) 与 系 统 脉 冲 响 应 函 数 h （ 0 的 卷 积 · (1) 将 信 号 ） 分 解 为 许 多 宽 度 为 At 的 窄 条 面 积 之 和 ， t=nAt 时 的 第 n 个 窄 条 的 高 度 为 佃 \^ 0 在 At 趋 近 于 零 的 情 况 下 ， 窄 条 可 以 看 作 是 强 度 等 于 窄 条 面 积 的 脉 冲 “ x(nåt)åt 
+![]({{site.zhehua.images}}/conv_imgs/cc12643de6d329eed39022639c6518fb.png)
 
  
 
