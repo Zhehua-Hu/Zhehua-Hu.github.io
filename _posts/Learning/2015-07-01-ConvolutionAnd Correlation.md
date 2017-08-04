@@ -9,7 +9,7 @@ description:
 ---
 
 
-## 感性描述：
+## 感性描述
 
 
 -   你每秒被打击一次【pulse input】
