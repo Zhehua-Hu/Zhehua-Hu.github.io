@@ -301,6 +301,53 @@ exit
 # config
 ```
 
+- phpstorm
+
+** 卸载IDE，删除~/.pycharm* 或/root.pycharm* **
+
+```
+INSTALL_NAME=phpstorm
+INSTALL_PACKAGE=PhpStorm-2017.2.tar.gz
+INSTALL_FOLDER=PhpStorm-172.3317.83
+sudo cp $INSTALL_PACKAGE /opt/
+cd /opt/
+sudo tar -xzvf /opt/$INSTALL_PACKAGE
+sudo rm $INSTALL_PACKAGE
+cd $INSTALL_FOLDER
+bash ./bin/$INSTALL_NAME.sh
+sudo ln -s /opt/$INSTALL_FOLDER/bin/$INSTALL_NAME.sh /usr/bin/$INSTALL_NAME
+```
+
+- datagrip
+* professional version
+```
+INSTALL_NAME=datagrip
+INSTALL_PACKAGE=datagrip-2017.1.5.tar.gz
+INSTALL_FOLDER=DataGrip-2017.1.5
+sudo cp $INSTALL_PACKAGE /opt/
+cd /opt/
+sudo tar -xzvf /opt/$INSTALL_PACKAGE
+sudo rm $INSTALL_PACKAGE
+cd $INSTALL_FOLDER
+bash ./bin/$INSTALL_NAME.sh
+sudo ln -s /opt/$INSTALL_FOLDER/bin/$INSTALL_NAME.sh /usr/bin/$INSTALL_NAME
+```
+
+- webstorm
+* professional version
+```
+INSTALL_NAME=webstorm
+INSTALL_PACKAGE=WebStorm-2017.2.tar.gz
+INSTALL_FOLDER=WebStorm-172.3317.70
+sudo cp $INSTALL_PACKAGE /opt/
+cd /opt/
+sudo tar -xzvf /opt/$INSTALL_PACKAGE
+sudo rm $INSTALL_PACKAGE
+cd $INSTALL_FOLDER
+bash ./bin/$INSTALL_NAME.sh
+sudo ln -s /opt/$INSTALL_FOLDER/bin/$INSTALL_NAME.sh /usr/bin/$INSTALL_NAME
+```
+
 - Java JDK
 ```
 # Change **JAVA_HOME**
