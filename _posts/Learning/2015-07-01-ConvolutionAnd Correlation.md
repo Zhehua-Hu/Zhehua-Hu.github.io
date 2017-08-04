@@ -18,13 +18,11 @@ description:
 
 >   比如疼痛短时间上升到最高，然后逐渐减弱，
 
->   []({{site.zhehua.images}}/conv_imgs/image1.png)
-
->   计算机生成了可选文字:
+![]({{site.zhehua.images}}/conv_imgs/image1.png)
 
 -   求施以任意的打击【x(t)】后，你的疼痛值。
 
->   []({{site.zhehua.images}}/conv_imgs/image2.png)
+![]({{site.zhehua.images}}/conv_imgs/image2.png)
 
 >   x(t)
 
