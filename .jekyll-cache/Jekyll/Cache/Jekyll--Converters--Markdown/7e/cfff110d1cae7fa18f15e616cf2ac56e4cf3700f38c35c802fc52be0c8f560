@@ -1,0 +1,18 @@
+I"�<h2 id="下载某库单一文件">下载某库单一文件</h2>
+
+<ul>
+  <li><a href="https://minhaskamal.github.io/DownGit/#/home">DownGit</a></li>
+</ul>
+
+<p>Web工具，由Minhas Kamal提供的，但不能下载单个文件</p>
+
+<h2 id="下载单个文件">下载单个文件</h2>
+<p>http://blog.csdn.net/deeplies/article/details/52754980</p>
+
+<h2 id="自动转换问题">自动转换问题</h2>
+<p>更换平台时 “warning: LF will be replaced by CRLF in …”
+如下设置，不进行自动转换</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global core.autocrlf false
+</code></pre></div></div>
+:ET

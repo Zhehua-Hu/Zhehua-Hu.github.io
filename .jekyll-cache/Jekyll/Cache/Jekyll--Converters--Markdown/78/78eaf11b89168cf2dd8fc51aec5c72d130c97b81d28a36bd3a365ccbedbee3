@@ -1,0 +1,180 @@
+I"�<h2 id="感性描述">感性描述</h2>
+
+<ul>
+  <li>
+    <p>你每秒被打击一次【pulse input】</p>
+  </li>
+  <li>
+    <p>每一次被打，疼痛是时间t的函数<strong>【h(t)，pulse response】,</strong></p>
+  </li>
+  <li>
+    <p>疼痛短时间上升到最高，然后逐渐减弱，</p>
+  </li>
+  <li>
+    <p>求施以任意的打击【x(t)】后，你的疼痛值。</p>
+  </li>
+</ul>
+
+<h2 id="梳理">梳理</h2>
+
+<p> 
+在系统分析中， 系统输入/输出和系统特性的作用关系在时间域就体现为卷积积分的关系</p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/c957a6888e3c62534f6bebb5a8cea117.png" alt="" /></p>
+
+<p> 
+<img src="http://zhehua.info/assets/images/conv_imgs/cc12643de6d329eed39022639c6518fb.png" alt="" /></p>
+
+<p> </p>
+
+<p> </p>
+
+<ul>
+  <li><strong>任意输入都可以离散为一系列点【pulse】</strong></li>
+</ul>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/1518275aff92c8195311450d49a8fb40.png" alt="（ 2 ） 根 据 线 性 系 统 特 性 ， 在 t ： 黿 t 时 刻 ， 窄 条 脉 冲 引 起 的 响 应 为 ． № ' 砌 凼 0 ' 砌 0 " /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/acd09fc48dafaac5e484a96172fe0864.png" alt="（ 3 ） 根 据 线 性 系 统 的 叠 加 原 理 ， 各 脉 冲 引 起 的 响 应 之 和 即 为 输 出 y （ 0 巛 的 (t)A 到 地 一 nAt) 0 " /></p>
+
+<p> </p>
+
+<p><strong>当△t -&gt; ∞</strong></p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/78f20016ff09a77f51e9dc450e14e643.png" alt="y(t) x(r)h(t r)dr h(t) " /></p>
+
+<ul>
+  <li>
+    <p><strong>其中h(t-τ) ,τ是零时刻冲击响应 h(0）右移的距离</strong></p>
+  </li>
+  <li>
+    <p><strong>时间翻转指的是,只计算 t时刻前的影响</strong></p>
+  </li>
+</ul>
+
+<p> </p>
+
+<p><strong>3.小结</strong></p>
+
+<p> </p>
+
+<p><strong>卷积为 ：在输入信号的每个位置，叠加一个单位响应，最后产生输出信号</strong></p>
+
+<p> </p>
+<h4 id="motion-demo">Motion Demo</h4>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/56c93999c75d2b6668eb1854a74cd36b.png" alt="" /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/86bcc9d2397f6710781e3fc72762fefe.png" alt="" /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/25707d9f37d7f2c447eff3b32e597e9f.png" alt="" /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/e45b0036eb9c22ccd98418fc14cb6249.png" alt="" /></p>
+
+<p> 
+<img src="http://zhehua.info/assets/images/conv_imgs/Convolution_of_box_signal_with_itself2.gif" alt="" /></p>
+
+<p> </p>
+
+<h2 id="相关">相关</h2>
+
+<h4 id="1感性">1.感性</h4>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/d0383e88a9f6f5fc08a7c54ece2e04a9.png" alt="你 要 向 右 走 ． 《 我 也 向 右 走 有 正 的 和 关 自 由 ， 与 你 无 关 不 相 关 你 要 向 右 走 ， 我 就 向 左 走 J 有 负 的 相 关 图 3 ． 8 相 关 函 数 的 含 又 " /></p>
+
+<h4 id="2离散变量的相关描述">2.离散变量的相关描述</h4>
+
+<p>变量相关的概念统计学中用相关系数来描述变量x，y之间的相关性.</p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/9ce8ff8d44091ab4728e5576eed9200d.png" alt="" /></p>
+
+<p> </p>
+
+<p> </p>
+
+<h4 id="连续函数相关">连续/函数相关</h4>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/c6f10a75d7efc0fe0995ea661874a415.png" alt="如 果 所 研 究 的 变 量 x ， y 是 与 时 间 有 关 的 函 数 ， 即 x (t) 与 y (t) ： x (t) " /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/3b26c95ccea4ff9d549110d575d08ac8.png" alt="这 时 可 以 引 入 一 个 与 时 间 有 关 的 量 ， 称 为 函 数 的 相 关 系 数 ， 简 称 相 关 函 数 ， 并 有 ： [ 了 谳 了 ，2\@渖]。2 相 关 函 数 反 映 了 二 个 信 号 在 时 移 中 的 相 关 性 。 x(t) y (t) " /></p>
+
+<ul>
+  <li>同一个函数的“互相关”为“自相关”</li>
+</ul>
+
+<blockquote>
+  <p><a href="http://zhehua.info/assets/images/conv_imgs/image19.png"></a></p>
+</blockquote>
+
+<blockquote>
+  <p>算法：令x()t), y(t)二个信号之间产生时差“再相乘和积分，就可以得到时刻二个信号的相关性.</p>
+</blockquote>
+
+<blockquote>
+  <p>相关分析的工程应用案例：机械加工表面粗糙度自相关分析被測工件相关分析,能计算回转误差等周期性的故障源 ；</p>
+</blockquote>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/1d49e7fac5296612d33aac2a6545cf0e.png" alt="案 例 ： 自 相 关 测 转 速 理 想 信 号 干 扰 信 号 性 质 3 ， 性 质 4 ： 提 取 周 期 性 转 速 成 分 。 " /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/efb08dfc2369e0251ddefa372a1e5421.png" alt="案 例 ： 地 下 输 油 管 道 漏 损 位 置 的 探 测 " /></p>
+
+<p> </p>
+
+<p> </p>
+
+<h4 id="数学表达">数学表达</h4>
+
+<blockquote>
+  <p>离散</p>
+</blockquote>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/a51f7199a24ff06a00f17a2160be6999.png" alt="+ u J 区 " /></p>
+
+<blockquote>
+  <p>连续</p>
+</blockquote>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/79ecd49527bf8eaaeef207bd2c30921f.png" alt="" /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/215ddbaad01f579dfe8778ffea13cfbd.png" alt="相 关 函 数 的 性 质 相 关 函 数 描 述 了 两 个 信 号 间 或 信 号 自 身 不 同 时 刻 的 相 似 程 度 ， 通 过 相 关 分 析 可 以 发 现 信 号 中 许 多 有 规 律 的 东 西 。 (1) 自 相 关 函 数 是 t 的 偶 函 数 ， R (t) 一 t 〕 ； （ 2 ） 当 亻 = 0 时 ， 自 相 关 函 数 具 有 最 大 值 。 （ 3 ） 周 期 信 号 的 自 相 关 函 数 仍 然 是 同 頻 率 的 周 期 信 号 ， 但 不 保 留 原 信 号 的 相 位 信 息 。 （ 4 ） 随 机 噪 声 信 号 的 自 相 关 函 数 将 随 t 的 增 大 快 速 衰 减 。 " /></p>
+
+<p> </p>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/0799bc89e0064077007ce5e4f9e97aaf.png" alt="（ 5 ） 两 周 期 信 号 的 互 相 关 函 数 仍 然 是 同 频 率 的 周 期 信 号 ， 且 保 留 原 了 信 号 的 相 位 信 息 。 （ 6 ） 两 个 非 同 頻 率 的 周 期 信 号 互 不 相 关 。 " /></p>
+
+<p> </p>
+<h4 id="二维引入">二维引入</h4>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/ba95a1781f06287f20317529ca049149.png" alt="" />
+ </p>
+
+<h2 id="小结">小结</h2>
+
+<p><img src="http://zhehua.info/assets/images/conv_imgs/d763c3a58c825b2dc61425f7c7d50b75.png" alt="Convolution Cross-correlation Autocorrelation مكالكالك ك «اككلا ميك ح ل ه لم تلا ه هلا ل " /></p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+:ET

@@ -1,0 +1,17 @@
+I".<h2 id="ngrok"><a href="https://www.ngrok.cc/">ngrok</a></h2>
+
+<p>注册</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./ngrok http 8080
+firefox http://tagea.ngrok.cc/api/2
+</code></pre></div></div>
+
+<h2 id="sunny">sunny</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./sunny clientid ea91f88dd8abe84a
+</code></pre></div></div>
+
+<p><a href="http://www.sunnyos.com/article-show-67.html">中文教程</a></p>
+
+<h2 id="自建">自建</h2>
+:ET

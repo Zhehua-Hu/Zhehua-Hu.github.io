@@ -1,0 +1,30 @@
+I"!<h2 id="绪论">绪论</h2>
+<p>目前英伟达（Nvidia）的嵌入式开发板的主要有JETSON TK1、JETSON TX1、JETSON TX2。</p>
+
+<p>不严格地给出以cuda核衡量的CNN计算性能比：</p>
+
+<ul>
+  <li>
+    <p>TITAN X (Maxwell）：JETSON TX1
+15:1</p>
+  </li>
+  <li>
+    <p>JETSON TX1 ：JETSON TK1
+2:1</p>
+  </li>
+</ul>
+
+<h2 id="资源与工具">资源与工具</h2>
+<p><a href="http://www.nvidia.cn/object/embedded-systems-cn.html">NVIDIA嵌入式官网</a></p>
+
+<p><a href="https://github.com/NVIDIA/DIGITS">NVIDIA的深度学习可视化工具</a></p>
+
+<h2 id="配置教程">配置教程</h2>
+
+<h3 id="tx1">TX1</h3>
+<p><a href="http://blog.csdn.net/jalong_ma/article/details/52743923">Jetson TX1 从零开始配置教程</a></p>
+
+<p><a href=""></a>
+<a href=""></a>
+<a href=""></a></p>
+:ET

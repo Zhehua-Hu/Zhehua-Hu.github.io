@@ -1,0 +1,40 @@
+I"�<h2 id="串口gui工具-cutecom">串口GUI工具: cutecom</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install cutecom
+sudo cutecom
+</code></pre></div></div>
+
+<h2 id="check-if-gps-is-connected">Check if GPS is connected</h2>
+
+<ul>
+  <li>对于ＵＳＢ转串口</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ll /dev/ttyUSB*
+</code></pre></div></div>
+
+<ul>
+  <li>对于串口</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ll /dev/tty*
+</code></pre></div></div>
+
+<h2 id="使用qt--c解析">使用Qt + C++解析</h2>
+<p>使用Qt库的优势在于可以基于其信号槽机制，并异步读取串口流。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Read info
+sudo ~/Qt/Examples/Qt-5.7/serialport/build-cenumerator-Desktop_Qt_5_7_0_GCC_64bit-Debug/cenumerator 
+
+# Asyn receive
+sudo ~/Qt/Examples/Qt-5.7/serialport/build-creaderasync-Desktop_Qt_5_7_0_GCC_64bit-Debug/creaderasync ttyUSB0 9600
+
+# terminal
+sudo ~/Qt/Examples/Qt-5.7/serialport/build-terminal-Desktop_Qt_5_7_0_GCC_64bit-Debug/terminal 
+</code></pre></div></div>
+
+<h2 id="常用协议">常用协议</h2>
+
+<p><a href="http://www.cnblogs.com/csMapx/archive/2011/11/02/2232663.html">参考</a></p>
+
+:ET

@@ -1,0 +1,96 @@
+I"�<h2 id="为什么写博客">为什么写博客</h2>
+
+<p>答：应对<strong>失控</strong>。</p>
+
+<p>如果一个人时常总结/反思/复盘/迭代自身能力，随着时间增长，
+其存续的“经验”会逐步增长，直至可能的失控状态。</p>
+
+<p>应对的方案之一，则是建立一套自己的知识体系（此处知识泛指科学、技能经验及其他可重复验证可记录物）。</p>
+
+<p>一个人的知识体系，可以简单分类为私有、半私有与公开体系。</p>
+
+<p>对于公开体系，建立以下机制，用功用角度来看能产生不少价值</p>
+
+<ul class="task-list">
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[x] 遇到问题</td>
+          <td>产生想法</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />解决并记录</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />整理文档并发布</li>
+</ul>
+
+<h2 id="写博客的功用价值">写博客的功用价值</h2>
+
+<ol>
+  <li>
+    <p>解决时记录 或 解决后及时记录，使得花费的精力不用重复第二次</p>
+  </li>
+  <li>
+    <p>整理文档即整理思路，以发布的标准就要求以功用价值做判据提升其可读性</p>
+  </li>
+  <li>
+    <p>以自己的思路，高可读性标注产生的记录，使得可以真正“写出来，就忘记”，</p>
+  </li>
+  <li>
+    <p>利于他人复用你的精力产出</p>
+  </li>
+</ol>
+
+<h2 id="知识管理工具">知识管理工具</h2>
+<ul>
+  <li>
+    <p>Evernote<br />
+正式使用的第一款工具，但对于富文本格式需要很大精力排版，
+编排功能远弱于word；半年后放弃使用；</p>
+  </li>
+  <li>
+    <p>Xmind<br />
+强大的树状结构排版能加速思路清晰化，曾长期使用；
+但其与word、txt格式的导入导出不够满意，记录的内容被锁死在里面，两年后放弃使用；</p>
+  </li>
+  <li>
+    <p>Notebook<br />
+若工作平台是win，其可以说近乎满足所有需求，同步功能强大，配合surface手写效果佳，
+曾长期作为主要工具使用，由于工作平台转为ubuntu，目前已退居二线；</p>
+  </li>
+  <li>
+    <p>Viznote<br />
+跨平台，在ubuntu上表现良好，同样由于编排功能弱，很快放弃；</p>
+  </li>
+  <li>
+    <p>Latex：TeXstudio<br />
+写作中含有大量数学公式的时间段使用过，但在追求效率的工作生活中，
+不值得为了这一点审美和可读性，牺牲掉编辑效率与跨平台实时协作能力。</p>
+  </li>
+</ul>
+
+<h2 id="目前选择">目前选择</h2>
+
+<ul>
+  <li>工作环境，需要多平台下均可编辑
+选择<strong>markdown</strong> 记录中小型文档， 使用haroopad或在pycharm下编辑</li>
+</ul>
+
+<p>选择<strong>office</strong>/<strong>wps</strong> 记录大型或内含多种格式的文档</p>
+
+<ul>
+  <li>
+    <p>需要多平台同步
+由坚果云托管</p>
+  </li>
+  <li>
+    <p>本地显示：<code class="language-plaintext highlighter-rouge">jekyll server</code></p>
+  </li>
+  <li>
+    <p>发布,提交github</p>
+  </li>
+</ul>
+
+:ET

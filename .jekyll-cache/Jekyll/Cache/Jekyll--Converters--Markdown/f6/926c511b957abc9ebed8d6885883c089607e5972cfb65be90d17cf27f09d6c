@@ -1,0 +1,120 @@
+I"$<p>jetbrains</p>
+
+<h2 id="sources">Sources</h2>
+<p>Official	:
+<a href="https://www.jetbrains.com/help/pycharm/2016.1/keyboard-shortcuts-you-cannot-miss.html?origin=old_help">https://www.jetbrains.com/help/pycharm/2016.1/keyboard-shortcuts-you-cannot-miss.html?origin=old_help</a></p>
+
+<p><a href="https://www.jetbrains.com/help/clion/2016.1/meet-clion.html">https://www.jetbrains.com/help/clion/2016.1/meet-clion.html</a></p>
+
+<h2 id="basics">Basics</h2>
+<p><strong>Export Setting!</strong></p>
+
+<ul>
+  <li>Hide windows
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Shift+ESC
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Indent and un-indent
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tab   Shift+tab
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Duplicate the current line or selection
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+D
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Find/replace in current file
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+F   Ctrl+R
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Find/replace in project or specified directory
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+Shift+F   Ctrl+Shift+R
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Comment or uncomment a line or block
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alt+C
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Toggle case
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alt+S
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Switch windows
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+Tab
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Search everywhere
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Double-press Shift
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>New in this file
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+Alt+Insert
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="advancement">Advancement</h2>
+
+<ul>
+  <li>Generate
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alt+Insert
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Show intention
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alt+Enter
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Refactor This(Include useful Extract!)
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+Shift+Alt+T
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Compare
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+LMOUSE choose two files   Ctrl+D
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Qick Documentation
+    <blockquote>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alt+D(remap)
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Navigation
+    <ul>
+      <li>Import Hierarchy</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Surround with</p>
+
+<p>Insert a live template	Ctrl+J
+Surround with a live template	Ctrl+Alt+J</p>
+
+:ET

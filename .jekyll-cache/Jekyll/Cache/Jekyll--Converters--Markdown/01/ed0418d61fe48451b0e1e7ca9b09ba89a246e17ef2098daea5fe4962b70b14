@@ -1,0 +1,219 @@
+I"<p><strong>DO NOT SUPPORT FOR WHOLE STYLE</strong></p>
+
+<p>Only do what cmake could do without hard work</p>
+
+<h1 id="installation">Installation</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CMAKE1=v3.6
+CMAKE2=cmake-3.6.0
+wget http://www.cmake.org/files/$CMAKE1/$CMAKE2.tar.gz
+tar xf $CMAKE2.tar.gz
+cd $CMAKE2
+./configure
+make -j12
+sudo make install
+cmake --version
+which cmake
+# use ccmake to config
+sudo apt-get install cmake-curses-gui
+ccmake ..
+</code></pre></div></div>
+
+<h1 id="basics">basics</h1>
+<h2 id="out-of-source-build">out-of-source build</h2>
+<h2 id="must-know">must know</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project()
+include_directories()
+link_directories()
+
+add_subdirectory()
+add_library()
+add_executable()
+add_custom_target()
+
+target_link_libraries()
+set_target_properties()
+
+aux_source_directory(&lt;dir&gt; &lt;variable&gt;)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
+
+message()
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>list example
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)</p>
+  </li>
+  <li>
+    <p>file example</p>
+    <blockquote>
+      <p>If GLOB is needed, cmake everytime when you change sources</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>file(GLOB CMAKE_FILES “cmake/<em>.cmake”)
+file(GLOB_RECURSE CMAKE_FILES “cmake/</em>.cmake”)</p>
+
+<p>grep -rn “CMAKE_MODULE_PATH”</p>
+
+<h1 id="advanced">Advanced</h1>
+
+<h2 id="use-ctest">use ctest</h2>
+<p>tiny2</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make test
+</code></pre></div></div>
+
+<h2 id="output-file">Output file</h2>
+<p>CMAKE_<ARTIFACT>_OUTPUT_DIRECTORY_<CONFIGURATION></CONFIGURATION></ARTIFACT></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># eg.
+# need to set ${OUTPUT_DIRECTORY} fisrt
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${OUTPUT_DIRECTORY}")
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${OUTPUT_DIRECTORY}")
+SET( CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG "${OUTPUT_DIRECTORY}")
+SET( CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${OUTPUT_DIRECTORY}")
+SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${OUTPUT_DIRECTORY}")
+SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${OUTPUT_DIRECTORY}")
+</code></pre></div></div>
+
+<h2 id="check-support">check support</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>include(CheckCXXCompilerFlag)  # should be "CheckCXXCompilerFlag"
+CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+
+if(COMPILER_SUPPORTS_CXX11)
+	# do something
+    message("Support C++11!")
+endif()
+</code></pre></div></div>
+
+<h2 id="generate-doc">generate doc</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># In CMakeLists.txt
+find_package(Doxygen)
+if(NOT DOXYGEN_FOUND)
+    message(FATAL_ERROR "Doxygen is needed to build the documentation.")
+else()
+	add_custom_target(doc
+		COMMAND ${DOXYGEN_EXECUTABLE} ${PROJECT_SOURCE_DIR}/Doxyfile
+		WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+		VERBATIM)
+endif()
+
+# In Doxyfile
+OUTPUT_DIRECTORY       = ../doc/doxygen
+
+# usage
+make doc
+cd ../
+firefox doc/doxygen/html/index.html
+</code></pre></div></div>
+
+<h2 id="use-gui">use GUI</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ccmake ..
+</code></pre></div></div>
+<ul>
+  <li>“c”-&gt; configure</li>
+  <li>“enter”-&gt; type parameter</li>
+  <li>“g”-&gt; generate and exit</li>
+</ul>
+
+<h2 id="show-make-output-info">show make output info</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make VERBOSE=1
+
+# or
+
+set(CMAKE_VERBOSE_MAKEFILE ON)
+</code></pre></div></div>
+<h1 id="cmake-configuration-types">CMAKE CONFIGURATION TYPES</h1>
+
+<ul>
+  <li>debug &amp; release folders</li>
+</ul>
+
+<h1 id="control-statement">control statement</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if(var) #or if(NOT var)
+...
+else()/elseif()
+...
+endif(var)
+
+Set(VAR a b c)
+foreach(f ${VAR})
+...
+endforeach(f)
+
+while()
+...
+endwhile()
+</code></pre></div></div>
+
+<h1 id="设置个宏定义开关">设置个宏定义开关</h1>
+<p>option(USE_SSE         “Set to switch to build use SSE”  ON)
+option(USE_ARM_NEON    “Set to switch to build use arm-neon” OFF)
+if (USE_SSE)
+    add_definitions(-DUSE_SSE) # 宏定义 USE_SEE
+    message(STATUS “Use SSE”)
+elseif(USE_ARM_NEON)
+    add_definitions(-DUSE_ARM_NEON) # 宏定义 USE_ARM_NEON
+    message(STATUS “Use ARM_NEON”)
+else()
+    message(STATUS “Use Nothing”)
+endif()</p>
+
+<p>c++代码的编写：</p>
+
+<p>#ifdef USE_SSE
+/* handle something use SSE<em>/
+#elif USE_ARM_NEON
+/</em> handle something use ARM_NEON <em>/
+#else
+/</em> handle something use nothing */
+#endif</p>
+
+<h1 id="include-libraries">Include Libraries</h1>
+<p>Boost</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find_package(Boost 1.57 REQUIRED)
+include_directories ( ${Boost_INCLUDE_DIRS} )
+target_link_libraries(main ${Boost_LIBS})
+</code></pre></div></div>
+
+<p>OpenCV</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find_package (OpenCV REQUIRED)
+add_executable (run XXX.cc)
+target_link_libraries (run ${OpenCV_LIBS})
+</code></pre></div></div>
+
+<p>PCL</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find_package(PCL 1.1 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+target_link_libraries (run ${PCL_LIBRARIES})
+</code></pre></div></div>
+
+<p>yaml</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>include_directories( /usr/local/include )
+target_link_libraries(main yaml-cpp)
+</code></pre></div></div>
+
+<p>Qt</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set(CMAKE_PREFIX_PATH /home/zhehua/Qt5.7.0/5.7/gcc_64/lib/cmake/Qt5)
+find_package(Qt5 REQUIRED COMPONENTS Core Widgets Gui)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+target_link_libraries(main ${OpenCV_LIBS} Qt5::Core Qt5::Widgets Qt5::Gui )
+</code></pre></div></div>
+
+<h1 id="sources">Sources</h1>
+<p>Clion :	<a href="https://www.jetbrains.com/help/clion/2016.1/cmakelists-file.html">https://www.jetbrains.com/help/clion/2016.1/cmakelists-file.html</a></p>
+
+<p><a href="http://www.hahack.com/codes/cmake/">CMake 入门实战</a>
+<a href="http://www.kitware.com/media/protrainingwebinars.php#introcmake">http://www.kitware.com/media/protrainingwebinars.php#introcmake</a></p>
+
+<h1 id="advanced-1">Advanced</h1>
+<p><a href="https://github.com/TheErk/CMake-tutorial/blob/master/CMake-tutorial-8feb2012.pdf">Github/CMake-tutorial</a></p>
+
+<p><a href="https://github.com/rpavlik/cmake-modules/blob/master/module-docs/Example-FindMyPackage.cmake">Example-FindMyPackage.cmake</a></p>
+
+:ET

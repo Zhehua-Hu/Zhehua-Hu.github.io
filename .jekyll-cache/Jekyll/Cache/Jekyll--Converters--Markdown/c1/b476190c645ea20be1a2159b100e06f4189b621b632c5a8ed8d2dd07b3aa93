@@ -1,0 +1,10 @@
+I"R<p>YAML is better for make configurations</p>
+
+<p>JSON is better for transfer data between applictions</p>
+
+<p>XML is better for make structured data in popular format, that should be not simple readable</p>
+
+<p>Google Protocol Buffers is alternative of XML, but more compact and not readable</p>
+
+<p>用作序列化，JSON快于YAML</p>
+:ET

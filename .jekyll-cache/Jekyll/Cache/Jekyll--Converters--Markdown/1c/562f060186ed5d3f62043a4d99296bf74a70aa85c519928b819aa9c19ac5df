@@ -1,0 +1,78 @@
+I"�<h2 id="google">Google</h2>
+<p><a href="http://www.googleguide.com/advanced\_operators\_reference.html">官方教程</a></p>
+
+<h3 id="logic">Logic</h3>
+
+<ul>
+  <li>
+    <p>AND (space default )</p>
+  </li>
+  <li>
+    <p>OR</p>
+  </li>
+  <li>
+    <p>NOT</p>
+  </li>
+</ul>
+
+<h3 id="specific-words---">specific words —— “ ”</h3>
+
+<hr />
+<p>命令亦可参与逻辑运算</p>
+
+<h3 id="filetype-后接文件后缀名">filetype: 后接文件后缀名</h3>
+
+<h3 id="site-后接地址">site: 后接地址</h3>
+
+<h3 id="限定类限制在主题内">限定类(限制在主题内)</h3>
+
+<p><code class="language-plaintext highlighter-rouge">inXXX:</code>后面接一个词，重复多组 等价 <code class="language-plaintext highlighter-rouge">allinXXX</code>:</p>
+
+<p>例如
+<code class="language-plaintext highlighter-rouge">[ intitle:google intitle:search ]</code> = <code class="language-plaintext highlighter-rouge">[ allintitle: google search ]</code></p>
+
+<p><img src="http://zhehua.info/assets/images/misc/google_search_operator.jpg" alt="" /></p>
+
+<h3 id="常用具体命令笔记">常用具体命令笔记</h3>
+
+<ul>
+  <li>
+    <p>info:<br />
+<code class="language-plaintext highlighter-rouge">info:&lt;url&gt;</code> 返回网站信息</p>
+  </li>
+  <li>
+    <p>location:<br />
+地点匹配</p>
+  </li>
+  <li>
+    <p>datarange:<br />
+日期范围</p>
+  </li>
+  <li>
+    <p>cache:<br />
+<code class="language-plaintext highlighter-rouge">cache:&lt;url&gt;</code> 返回网页快照信息</p>
+  </li>
+  <li>
+    <p>source:<br />
+指定源</p>
+  </li>
+  <li>
+    <p>weather:<br />
+ 天气相关</p>
+  </li>
+  <li>
+    <p>auther:<br />
+<code class="language-plaintext highlighter-rouge">author:&lt;name&gt;</code></p>
+  </li>
+  <li>
+    <p>safesearch:
+返回的结果会屏蔽掉某些敏感词</p>
+  </li>
+  <li>
+    <p>命令过多，不一一说明</p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="必应"><a href="cn.bing.com">必应</a></h2>
+:ET

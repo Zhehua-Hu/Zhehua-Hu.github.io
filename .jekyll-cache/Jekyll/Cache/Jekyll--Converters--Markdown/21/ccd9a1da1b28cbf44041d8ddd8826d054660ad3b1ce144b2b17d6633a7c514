@@ -1,0 +1,46 @@
+I"�<h2 id="善用轮子">善用轮子</h2>
+<p><a href="https://searchcode.com/">searchcode</a></p>
+
+<p><a href="https://github.com/bayandin/awesome-awesomeness">Awesome Awesomeness</a></p>
+
+<p><a href="https://github.com/jobbole/awesome-python-cn">Python 资源大全中文版</a></p>
+
+<h2 id="可视化方法能加速理解">可视化方法能加速理解</h2>
+
+<hr />
+<h2 id="数学">数学</h2>
+<h3 id="线性代数可视化学习强烈推荐">线性代数可视化学习(强烈推荐！)</h3>
+
+<p>英文版： <a href="http://www.3blue1brown.com/essence-of-linear-algebra/">essence-of-linear-algebra</a>
+中文版： <a href="http://www.bilibili.com/video/av6731067/">线性代数的本质</a></p>
+
+<h3 id="3d数学基础图形与游戏开发">《3D数学基础：图形与游戏开发》</h3>
+<p><a href="http://gamemath.com/">作者网站</a></p>
+
+<p>一本简单明了的讲解矩阵、四元数、欧拉角以及编程实现的书，讲出了所以然。</p>
+
+<hr />
+<h2 id="算法">算法</h2>
+
+<p><a href="http://netsmell.com/post/pathfinding.html">动画展示各种路径搜索算法</a></p>
+
+<h2 id="算法选择">算法选择</h2>
+
+<p><a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">scikit-learn</a></p>
+
+<p><a href="http://blog.csdn.net/dream_angel_z/article/details/49388733">机器学习之特征工程 </a></p>
+
+<h2 id="competition">Competition</h2>
+
+<ul>
+  <li><a href="https://www.kaggle.com">kaggle</a></li>
+</ul>
+
+<h2 id="入门资源">入门资源</h2>
+<p><a href="http://www.pythoner.com/238.html">《机器学习实战》读书笔记</a></p>
+
+<p><a href="www.csie.ntu.edu.tw/~cjlin/libsvm/">libsvm</a></p>
+
+<p><a href="http://blog.csdn.net/v_july_v/article/details/7624837">理解SVM的三层境界</a></p>
+
+:ET

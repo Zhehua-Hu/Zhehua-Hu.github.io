@@ -1,0 +1,466 @@
+I"�D<h2 id="绪论">绪论</h2>
+
+<hr />
+<h2 id="初始设置">初始设置</h2>
+<p>本文假定使用场景存在远程服务器，如github或自建服务器。</p>
+
+<p>使用git/github，最初等的需求是使本地端与云端同步。</p>
+
+<h3 id="添加用户只需一次">添加用户[只需一次]</h3>
+<p>目的是在一台计算机上配置好后方便使用git。</p>
+
+<ul>
+  <li>为方便修改设置，在shell中设置以下变量（请根据自身情况修改）</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GITHUB_USE_RNAME=Zhehua-Hu
+GITHUB_USER_EMAIL=ZhehuaHu@163.com
+</code></pre></div></div>
+
+<ul>
+  <li>输入命令</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name \"${GITHUB_USE_RNAME}\"
+git config --global user.email \"${GITHUB_USER_EMAIL}\"
+</code></pre></div></div>
+
+<p>可以使用以下命令检查</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 第1条命令是查看本地配置的用户名，
+# 第2条命令是查看全局配置的用户名，
+# 第3条命令是查看优先级最高的用户名，
+# 如果有本地配置项，就读取本地配置项，
+# 如果没有本地配置项，就读取全局配置项。
+git config --get --local user.name
+git config --get --global user.name
+git config --get user.name
+</code></pre></div></div>
+
+<h3 id="设置ssh密钥只需一次">设置SSH密钥[只需一次]</h3>
+<p>目的是为了多次提交不用反复输入用户名与密码。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~
+mkdir -p .ssh
+cd ~/.ssh
+
+ssh-keygen -t rsa -C \"${GITHUB_USER_EMAIL}\"
+# 输入保存的文件名，如id_rsa
+# 输入保存密码，
+# 重复输入
+# 文件已生成
+
+# copy pub key to github
+
+# 检查
+ssh -T git@github.com
+# 若显示 "...You've successfully authenticated..."则完成
+cd $cur_pwd
+</code></pre></div></div>
+
+<p><a href="http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html">图解参考</a></p>
+
+<h3 id="创建新项目">创建新项目</h3>
+<p>先登录github网页， 建立新项目。</p>
+
+<p>为方便期间，设置变量（请根据自身情况修改）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PRO_NAME=Enchain
+</code></pre></div></div>
+
+<h3 id="对于新项目本地无代码时">对于新项目，本地无代码时</h3>
+<p>应先在github建立新项目，然后clone到本地，有两种方式，此处直接输入</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:${GITHUB_USE_RNAME}/${PRO_NAME}
+</code></pre></div></div>
+
+<h3 id="对于新项目本地有代码时">对于新项目，本地有代码时</h3>
+
+<ul>
+  <li>在项目文件夹初始化</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+</code></pre></div></div>
+
+<p>该命令使用git生成管理框架，实质上是生成.git文件夹等文件。</p>
+
+<ul>
+  <li>与云端同步</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin git@github.com:${GITHUB_USE_RNAME}/${PRO_NAME}.git
+# 此处的-u只需第一次时使用
+git push -u origin master
+# 检查是否有两项链接
+git remote -v
+</code></pre></div></div>
+
+<h3 id="同时提交到github与其他云端如coding的设置">同时提交到github与其他云端（如coding）的设置</h3>
+<p>需求； 一条push命令，同步本地与多个云端服务器</p>
+
+<ul>
+  <li>提交coding的SSH密钥[只需一次]</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C "yourNewEmail@xxx.xxx"
+</code></pre></div></div>
+
+<ul>
+  <li>在项目文件夹内的.git/config修改[对每个有此需求的项目都需配置]</li>
+</ul>
+
+<p>将</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>url = ××××××××××××××××××××××××××××××××××××
+fetch = +refs/heads/*:refs/remotes/origin/*
+</code></pre></div></div>
+
+<p>添加为</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>url = ××××××××××××××××××××××××××××××××××××
+fetch = +refs/heads/*:refs/remotes/origin/*
+pushurl= &lt;SSH格式，如git@github.com:${GITHUB_USE_RNAME}/${PRO_NAME}.git&gt;
+pushurl= &lt;另一个云端链接&gt;
+</code></pre></div></div>
+
+<h2 id="基础工作流">基础工作流</h2>
+
+<h3 id="图解git基础工作流">图解git基础工作流</h3>
+
+<p><img src="http://zhehua.info/assets/images/Toolchain/Git/git.png" alt="" /></p>
+
+<h3 id="文解git基础工作流">文解git基础工作流</h3>
+
+<ul>
+  <li>[1] coding， 本地文件有更改变化</li>
+  <li>[2] 添加更改， 可使用通配符</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add * 
+</code></pre></div></div>
+
+<blockquote>
+  <p>add<br />
+<code class="language-plaintext highlighter-rouge">git add *</code><br />
+<code class="language-plaintext highlighter-rouge">git add --all </code> <br />
+<code class="language-plaintext highlighter-rouge">git add &lt;list of files&gt;</code><br />
+<code class="language-plaintext highlighter-rouge">git add &lt;list of directory&gt;</code></p>
+</blockquote>
+
+<ul>
+  <li>[3] 提交更改， 建议添加注释</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "add your comments"
+</code></pre></div></div>
+
+<ul>
+  <li>[4] 推送到云端同步</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin master 
+</code></pre></div></div>
+
+<p>更加自动化的方法，可以使用Aries</p>
+
+<h2 id="进阶命令">进阶命令</h2>
+<h3 id="查看状态">查看状态</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+# 紧凑格式
+git status -s
+</code></pre></div></div>
+
+<h3 id="查看日志">查看日志</h3>
+<p>每一次commit会生成一个独一无二的hash值，可以用该值，
+如<code class="language-plaintext highlighter-rouge">294c42c72e55625f5a653b6804b1b64435955339</code>或其缩写<code class="language-plaintext highlighter-rouge">294c42c</code>代指该commit，在后面会有多次应用。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
+# 紧凑格式
+git log --pretty=oneline
+# 紧凑+缩写格式
+git log --pretty=oneline --abbrev-commit
+# 紧凑+缩写+可视化格式
+git log --pretty=oneline --abbrev-commit --graph
+</code></pre></div></div>
+
+<h3 id="查看commit信息">查看commit信息</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show &lt;commit-hash&gt;
+</code></pre></div></div>
+
+<h3 id="重命名与移动文件">重命名与移动文件</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git mv &lt;old-file&gt; &lt;new-file&gt;
+git mv &lt;src&gt; &lt;des&gt;
+</code></pre></div></div>
+
+<h3 id="删除remove-files">删除（remove files）</h3>
+<p>使用<code class="language-plaintext highlighter-rouge">rm</code>不会改变git对该文件的追踪，应该使用git封装后的命令</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rm &lt;file-list&gt;
+</code></pre></div></div>
+
+<p>实际上直接删除该文件，git在commit后能够检测到。
+更加常用的命令是：<br />
+把不想添加的文件add/commit/push了，想取消该操作，可以使用</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rm --cached &lt;file-list&gt;
+git rm --cached -r &lt;folder-list&gt;
+</code></pre></div></div>
+
+<h3 id="撤销undo-commit">撤销（undo commit）</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 撤销某文件
+git reset &lt;file&gt;
+
+# 撤销最后一次commit
+git reset --soft HEAD^
+
+git reset --hard HEAD~n
+git reset --hard sha1(at （undo commit）least 4 numbers)
+</code></pre></div></div>
+
+<h3 id="检出undo-workspace">检出（undo workspace）</h3>
+<p><strong>从local repo恢复到workspace</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout &lt;file&gt;
+</code></pre></div></div>
+
+<h3 id="对比差异">对比差异</h3>
+<p>实际上更推荐使用GUI或IDE内工具对比文件， 也可以使用beyond compare</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># show all difference 
+git diff
+# show difference of &lt;file&gt;
+git diff &lt;file&gt;
+</code></pre></div></div>
+
+<h3 id="gitignore简明语法"><a href="http://zhehua.info/2016/07/05/GitignoreSyntax.html">gitignore简明语法</a></h3>
+<p>git应管理重要的，由人力投入产生的代码、文件，对程序能自动生成的文件就可以使用gitignore“屏蔽”。</p>
+
+<hr />
+<h2 id="版本控制">版本控制</h2>
+<p>基础工作流只能满足单线的同步管理，git的效力核心之一在于版本控制。</p>
+
+<h3 id="stash">Stash</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git stash
+git stash list
+git stash pop
+
+</code></pre></div></div>
+
+<h3 id="tag">Tag</h3>
+<p>Tag通常是面向用户的版本号，如发布<code class="language-plaintext highlighter-rouge">v1.0.0</code>版本。</p>
+
+<ul>
+  <li>在本地加tag</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 显示现有tag
+git tag
+# 给最近commit加tag
+git tag &lt;tag-name&gt;
+# 删除tag
+git tag -d &lt;tag-name&gt;
+# 给&lt;commit-hash&gt;代指的commit加tag
+git tag &lt;tag-name&gt; &lt;commit-hash&gt;
+# 给&lt;commit-hash&gt;代指的commit加tag，并加注释
+git tag -a &lt;tag-name&gt; -m "comments" &lt;sha1&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>push到云端
+默认情况下标签不会被<code class="language-plaintext highlighter-rouge">git push</code>推送到到云端，需使用命令</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 推送一个本地标签
+git push [op:repo-name] &lt;tag-name&gt;可以；
+# 推送全部未推送过的本地标签
+git push [op:repo-name] --tags
+</code></pre></div></div>
+
+<hr />
+<h2 id="本地-云端协同">本地-云端协同</h2>
+
+<h3 id="clone">clone</h3>
+<p>从云端clone到本地，有两种方式，一般Clone他人使用HTTP， Clone自己使用SSH方式。</p>
+
+<p>因为SSH方式在设置密钥后多次提交不用反复输入用户名与密码。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># SSH 【Clone自己使用】
+git clone git@github.com:${GITHUB_USE_RNAME}/${PRO_NAME}
+
+# HTTP
+git clone https://github.com/${GITHUB_USE_RNAME}/${PRO_NAME}	
+</code></pre></div></div>
+
+<blockquote>
+  <p>clone<br />
+<code class="language-plaintext highlighter-rouge">git clone &lt;link&gt;</code><br />
+<code class="language-plaintext highlighter-rouge">git clone &lt;link&gt; &lt;folder name&gt;</code></p>
+</blockquote>
+
+<h3 id="remote">remote</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 显示云端名
+git remote
+# 显示云端url
+git remote -v
+# 添加云端库【使用SSH方式】
+git remote add &lt;repo-name&gt; git@github.com:${GITHUB_USE_RNAME}/${PRO_NAME}.git
+# 删除云端库
+git remote rm &lt;repo-name&gt;
+</code></pre></div></div>
+
+<h3 id="push">push</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 第一次push时使用
+git push -u origin master
+# 之后可用简化
+git push
+</code></pre></div></div>
+
+<h3 id="fetch">fetch</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch origin
+</code></pre></div></div>
+
+<h3 id="pull">pull</h3>
+<p>等于<code class="language-plaintext highlighter-rouge">git fetch</code>+<code class="language-plaintext highlighter-rouge">git merge</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull &lt;remote-name&gt; &lt;branch-name&gt;
+</code></pre></div></div>
+
+<h3 id="blame">blame</h3>
+<p>定位问题代码,通过显示每行代码的左侧会列出它最后一次被更新时的hash值、开发者和时间。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git blame &lt;file&gt;
+</code></pre></div></div>
+
+<h2 id="分支管理">分支管理</h2>
+<h3 id="branch">branch</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>查看分支：git branch
+
+创建分支：git branch &lt;name&gt;
+
+切换分支：git checkout &lt;name&gt;
+
+recover certain file :git checkout -- filename
+
+创建+切换分支：git checkout -b &lt;name&gt;
+
+合并某分支到当前分支：git merge &lt;name&gt;
+(recommend)git merge --no-ff -m "merge with no-ff" &lt;name&gt;
+
+删除分支：git branch -d &lt;name&gt;
+</code></pre></div></div>
+
+<h3 id="rebase">rebase</h3>
+<p>git rebase 和 git merge 都是用来合并，各有优缺点，
+所以有些团队会约定合并时只能用 git merge 或只能用 git rebase，
+如果约定只能用 git rebase 来合并，这种工作方式就被称为 ‘git rebase 工作流’。
+在用 git rebase 合并分支时，合并后的日志并非按各分支的提交时间排列，
+而是把一个分支的日志全部排列在另一个分支的日志之上，即使它们是并行开发的，
+在开发过程中交错提交，但看起来也好像是按先后顺序开发的一样。</p>
+
+<hr />
+<h2 id="其他需求">其他需求</h2>
+<h3 id="alias">Alias</h3>
+
+<h3 id="若commit文件没提交全">若commit文件没提交全</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 先add
+git add &lt;list of files&gt;
+# 使用old-comments
+git commit --amend -C HEAD`
+# 使用new-comments
+git commit --amend -m "new-comments"
+# 在编辑器内编辑old-comments（大量注释时适用）
+git commit --amend
+</code></pre></div></div>
+
+<h3 id="引用别人的库详细教程">引用别人的库<a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97">详细教程</a></h3>
+<p>把别人的库作为自己的项目的一个子模块</p>
+
+<ul>
+  <li>添加</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule add &lt;module-url&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>删除</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rm &lt;module-folder&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>下载</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recursive &lt;link&gt;
+git clone --recursive &lt;link&gt; &lt;folder name&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>更新
+    <ul>
+      <li>单独更新某个submodule
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cd &lt;submodule-folder&gt;
+  git pull origin master
+</code></pre></div>        </div>
+      </li>
+      <li>更新所有submodule
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git submodule foreach git pull origin master
+</code></pre></div>        </div>
+      </li>
+      <li>修改.gitmodules中submodule链接后更新
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git submodule sync
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="reference">Reference</h2>
+
+<h3 id="讲解清晰入门博客">讲解清晰，入门博客</h3>
+
+<ul>
+  <li>
+    <p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰中文教程</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html">Git远程操作详解</a></p>
+  </li>
+</ul>
+
+<h3 id="游戏学习闯关方式">游戏学习，闯关方式</h3>
+
+<ul>
+  <li>
+    <p><a href="https://try.github.io">Git Tutorial</a></p>
+  </li>
+  <li>
+    <p><a href="http://wiki.jikexueyuan.com/project/githug-walkthrough/">极客学院wiki</a></p>
+  </li>
+</ul>
+
+<h3 id="进阶资源">进阶资源</h3>
+<ul>
+  <li>
+    <p><a href="https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md">GitHub秘籍</a></p>
+  </li>
+  <li>
+    <p><a href="https://git-scm.com/book/en/v2">《Pro Git》</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.worldhello.net/gotgithub/">GotGitHub</a></p>
+  </li>
+</ul>
+:ET

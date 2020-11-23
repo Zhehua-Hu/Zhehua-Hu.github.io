@@ -1,0 +1,86 @@
+I"�<h2 id="绪论">绪论</h2>
+<p>如果Linux是你的工作平台，并且vi/vim不是你的主要工具，那你就需要好好审视你目前使用的终端了。</p>
+
+<p>从浅显的角度，以ubuntu默认的bash为例，日常使用中有如下不足：</p>
+
+<ul>
+  <li>
+    <p>缺少一些方便的命令，比如cd到母文件夹两次需要使用<code class="language-plaintext highlighter-rouge">or ../..</code>, 在zsh只需要<code class="language-plaintext highlighter-rouge">...</code>或<code class="language-plaintext highlighter-rouge">cd ...</code></p>
+  </li>
+  <li>
+    <p>缺少可选列表功能，在zsh使用tab可以显示可选的文件、命令</p>
+  </li>
+</ul>
+
+<p>本文的主角zsh不仅可以满足以上功能，还有更强的定制功能，而“强定制”并不意味着需要你花费很多时间，
+oh-my-zsh是一个github上关于zsh的项目，涵盖了我们所需的功能增强、代码美化等功能，直接使用即可。</p>
+
+<h2 id="安装">安装</h2>
+<p>请按如下步骤，勿漏项！</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 目前系统安装的shell
+cat /etc/shells
+# 目前系统使用的shell
+echo $SHELL
+# 安装zsh
+sudo apt-get install zsh
+zsh --version
+# 修改系统使用的shell
+chsh -s /bin/zsh
+# 建议重启，极其建议
+sudo reboot
+</code></pre></div></div>
+
+<p>重启后再打开终端，运行</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 安装工具
+sudo apt-get install curl git
+# 创建oh-my-zsh文件路径
+mkdir -p ~/.oh-my-zsh
+# 安装oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+</code></pre></div></div>
+
+<h2 id="卸载方法">卸载方法</h2>
+<p>如果你要卸载, 直接运行 <code class="language-plaintext highlighter-rouge">uninstall_oh_my_zsh</code> 。</p>
+
+<h2 id="必备插件">必备插件</h2>
+<ul>
+  <li>
+    <p>git
+git是代码项目管理工具，有兴趣可以阅读<a href="http://zhehua.info/2016/03/02/Git.html">Git学习之路</a>。</p>
+  </li>
+  <li>
+    <p>autojump
+```
+sudo apt-get install autojump</p>
+    <h1 id="change-zshrc-or-copy-my-backup-file">change .zshrc (or copy my backup file)</h1>
+    <h1 id="plugin--autojump">plugin += autojump</h1>
+    <p>echo “[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; . ~/.autojump/etc/profile.d/autojump.sh” » ~/.zshrc
+echo “autoload -Uz compinit &amp;&amp; compinit -u” » ~/.zshrc
+source ~/.zshrc</p>
+  </li>
+</ul>
+
+<h2 id="修改配色">修改配色</h2>
+<p>选择Solarized配色，原因详见</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 下载并添加配色
+sudo git clone https://github.com/seebi/dircolors-solarized
+mkdir -p ~/.dir_colors
+cd dircolors-solarized
+cp dircolors.256dark ~/.dir_colors
+
+# 修改配置文件 .zshrc
+echo "eval `dircolors ~/.dir_colors`" &gt;&gt; ~/.zshrc
+source ~/.zshrc
+</code></pre></div></div>
+
+<h2 id="我的操作">我的操作</h2>
+<ul>
+  <li>add alias</li>
+</ul>
+
+<h2 id="参考">参考</h2>
+<p><a href="http://ohmyz.sh/">ohmyz</a></p>
+
+:ET

@@ -1,0 +1,27 @@
+I"<h2 id="参考">参考</h2>
+
+<p><a href="http://python.jobbole.com/84286/">在 Ubuntu 上使用 Nginx 部署 Flask 应用</a></p>
+
+<p><a href="http://www.cnblogs.com/knarfeh/p/5616515.html">写给新手看的Flask+uwsgi+Nginx+Ubuntu部署教程 </a></p>
+
+<h2 id="安装">安装</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install nginx
+
+# start
+sudo /etc/init.d/nginx start
+firefox http://localhost
+
+sudo apt-get install build-essential python-dev
+sudo -H pip install uwsgi
+
+</code></pre></div></div>
+
+<h2 id="uwsgi-emperor">uWSGI Emperor</h2>
+
+<p>http://python.jobbole.com/84286/</p>
+
+<h2 id="qa">Q&amp;A</h2>
+<p>See “systemctl status nginx.service” and “journalctl -xe” for details.</p>
+
+:ET

@@ -1,0 +1,209 @@
+I"M<h2 id="绪论">绪论</h2>
+<p>本文实现</p>
+
+<p>笔者的工作环境基于Pycharm，如有兴趣了解，参见[]
+为了照顾不同环境的读者，以下讲解基于终端，也就是说你应该如下运行程序：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python path/to/tutorial.py
+</code></pre></div></div>
+
+<p>建议你下载代码示例</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/Zhehua-Hu/MakeAPI-Tutorials.git MakeAPI-Ref
+</code></pre></div></div>
+
+<p>然后创建一个新的文件夹，按照本文一步步进行，有疑问再参考代码示例</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir MakeAPI-Tutorials &amp;&amp; cd  MakeAPI-Tutorials
+</code></pre></div></div>
+
+<h2 id="配置virtualenv环境">配置virtualenv环境</h2>
+<ul>
+  <li>为什么要使用虚拟python环境工具　virtualenv？</li>
+</ul>
+
+<p>原因在于，当你需要同时维护多个使用了python的项目时，
+virtualenv使得这些项目可以在同一时间基于不同版本的python与库运行。</p>
+
+<ul>
+  <li>安装</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install virtualenv
+virtualenv --version
+</code></pre></div></div>
+
+<ul>
+  <li>创建</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv newpy --python=python2.7
+# virtualenv有些可选参数，上条命令选择使用的python版本
+# 具体查询
+virtualenv --help
+</code></pre></div></div>
+
+<ul>
+  <li>工作方式</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 激活虚拟环境
+source ./newpy/bin/activate
+
+# 这之后就进入了虚拟环境
+# &lt;working time&gt;
+
+# 退出虚拟环境
+deactive
+</code></pre></div></div>
+
+<hr />
+<p>注意：下文均在虚拟环境下newpy进行</p>
+<h2 id="flask入门helloworld">flask入门：helloworld</h2>
+
+<h3 id="安装flask">安装flask</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install flask
+</code></pre></div></div>
+
+<h3 id="helloworld示例">helloworld示例</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir demo1_helloworld &amp;&amp; cd demo1_helloworld
+touch helloworld.py
+</code></pre></div></div>
+
+<p>helloworld.py 如下</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!newpy/bin/python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Hello, World!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre></div></div>
+
+<p>运行</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python helloworld.py
+</code></pre></div></div>
+
+<p>通过浏览器打开</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>firefox http://127.0.0.1:5000/
+</code></pre></div></div>
+
+<h3 id="释疑">释疑</h3>
+
+<ul>
+  <li>return返回网页，故可以return string或html格式</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>return "Hello, World!"
+return "&lt;h1 style='color:black    '&gt;Hello, World!&lt;/h1&gt;"
+</code></pre></div></div>
+
+<ul>
+  <li>app.run()的参数</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 无参数
+app.run()
+
+# 调试模式
+app.run(debug=True)
+
+# 
+# app.run(debug=True, port=8080)
+
+# 默认host为本机地址localhost, 一般被设置为本机回环地址127.0.0.1
+
+# app.run(debug=True, host='192.168.1.131', port=8080)
+app.run(debug=True, host='0.0.0.0', port=8080)
+</code></pre></div></div>
+
+<p>##　工作序列</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>venv/bin/pip install flask-httpauth
+
+
+curl -i http://192.168.1.131:8080/todo/api/v1.0/tasks
+curl -u ok:python -i http://192.168.1.131:8080/todo/api/v1.0/tasks
+curl -u ok:python -i http://121.69.57.2:8080/todo/api/v1.0/tasks
+
+
+curl -u ok:python -i http://192.168.1.131:8080/todo/api/v1.0/tasks/1
+
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"add1":3.1415, "add2":3.1}' \
+http://tagea.ngrok.cc/api
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"crmR": "genvict01", "name": "crm99", "id": "12345678", "add1": 3.1415, "add2":3.1}' \
+http://tagea.ngrok.cc/api
+
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"crmR": "genvict01", "name": "crm99", "id": "12345678", "picurl": "http://zhehua.info/assets/images/misc/Selection_001.png", "add1": 3.1415, "add2":3.1}' \
+http://tagea.ngrok.cc/api
+
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"crmR": "genvict01", "name": "crm99", "carid": "12345678", 
+"picurl": "http://zhehua.info/assets/images/misc/Selection_001.png", 
+"mode": "request", rt": "default", "info": "default"}' \
+http://tagea.ngrok.cc/api
+
+
+#-----
+
+curl -u ok:python -i http://tagea.ngrok.cc/api
+
+curl -u ok:python -i -H "Content-Type: application/json" \
+-X POST -d '{"id": 1, "crmR": "genvict01", "name": "crm99", "carid": "12345678", 
+"picurl": "http://zhehua.info/assets/images/misc/Selection_001.png",
+"mode": "request", "rt": "default", "info": "default"}' \
+http://tagea.ngrok.cc/api
+
+
+
+</code></pre></div></div>
+
+<p>##</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir demo2_query_json &amp;&amp; cd demo2_query_json
+</code></pre></div></div>
+
+<p>##</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir demo3_update_delete &amp;&amp; cd demo3_update_delete
+</code></pre></div></div>
+
+<p>##</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir demo4_access_externally &amp;&amp; cd demo4_access_externally
+</code></pre></div></div>
+
+<blockquote>
+
+  <p><code class="language-plaintext highlighter-rouge">-u: authorize</code>
+-d: –data
+-X: set protocol
+-i: –include
+-H: –header</p>
+</blockquote>
+
+<h2 id="参考">参考</h2>
+
+<p>Miguel Grinberg的博客
+    * <a href="https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask">Designing a RESTful API with Python and Flask</a></p>
+
+<p>上文中译
+    * <a href="http://www.pythondoc.com/flask-restful/first.html">使用 Python 和 Flask 设计 RESTful API</a></p>
+
+<p>flask
+<a href="http://www.cnblogs.com/knarfeh/p/5616515.html">写给新手看的Flask+uwsgi+Nginx+Ubuntu部署教程</a></p>
+
+:ET

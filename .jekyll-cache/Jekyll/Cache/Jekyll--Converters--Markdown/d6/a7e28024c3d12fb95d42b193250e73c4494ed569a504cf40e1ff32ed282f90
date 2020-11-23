@@ -1,0 +1,34 @@
+I"Z<h2 id="caffe">caffe</h2>
+
+<h2 id="tensorflow"><a href="https://www.tensorflow.org/">tensorflow</a></h2>
+
+<h2 id="mxnet">mxnet</h2>
+
+<h2 id="可视化">可视化</h2>
+<p>常见需求有网络结构可视化，权重与特征图可视化
+<a href="http://ethereon.github.io/netscope/#/editor">netscope</a></p>
+
+<h2 id="模型">模型</h2>
+<p><a href="https://github.com/BVLC/caffe/wiki/Model-Zoo">Model Zoo</a></p>
+
+<h2 id="数据集">数据集</h2>
+
+<h3 id="voc">VOC</h3>
+<p><a href="http://host.robots.ox.ac.uk/pascal/VOC">Visual Object Classes</a></p>
+
+<h3 id="cifar">CIFAR</h3>
+<p><a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10 and CIFAR-100</a></p>
+
+<h2 id="state-of-the-art">State-of-the-art</h2>
+<p><a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html">分类任务，常见数据集排行</a></p>
+
+<h2 id="有趣应用">有趣应用</h2>
+
+<h3 id="微软识别服务"><a href="https://www.azure.cn/cognitive-services/zh-cn/emotion-api">微软识别服务</a></h3>
+
+<h3 id="face2face"><a href="http://www.graphics.stanford.edu/~niessner/thies2016face.html">Face2Face</a></h3>
+<p>若能实用，将改变“眼见为实”的世界观，若能结合声音的伪造，将影响社会运行。</p>
+
+<h3 id="deepdriving"><a href="http://deepdriving.cs.princeton.edu/">DeepDriving</a></h3>
+<p><a href=""></a></p>
+:ET

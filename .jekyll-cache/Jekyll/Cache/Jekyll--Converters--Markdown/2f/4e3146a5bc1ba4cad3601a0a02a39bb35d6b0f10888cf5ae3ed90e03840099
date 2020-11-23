@@ -1,0 +1,81 @@
+I"�<h2 id="visio">Visio</h2>
+
+<h3 id="简介">简介</h3>
+<p>visio目前属于微软公司，由原Visio公司（shapeware）开发，1999年MS收购，
+获得全部代码与版权，成为office套件之一。</p>
+
+<p>Visio的通常用作绘制<strong>流程图</strong>与<strong>逻辑关系图</strong>，只要付出时间，也可以用来搭建软件界面模型。</p>
+
+<p>它不太适合以下领域：</p>
+
+<ul>
+  <li>
+    <p>机械、建筑、电子专业绘图</p>
+  </li>
+  <li>
+    <p>2D、3D建模</p>
+  </li>
+</ul>
+
+<h3 id="入门">入门</h3>
+
+<h4 id="绘图页">绘图页</h4>
+<ul>
+  <li>前景页</li>
+  <li>背景页</li>
+</ul>
+
+<h4 id="图层">图层</h4>
+<ul>
+  <li>
+    <p>不同形状可以上下移动层</p>
+  </li>
+  <li>
+    <p>不同类，如连线分在连线层</p>
+  </li>
+  <li>
+    <p>标题与边框单独一层</p>
+  </li>
+</ul>
+
+<h4 id="容器组合">容器、组合</h4>
+
+<h4 id="其他">其他</h4>
+<ul>
+  <li>
+    <p>批注</p>
+  </li>
+  <li>
+    <p>墨迹</p>
+  </li>
+</ul>
+
+<h3 id="小结">小结</h3>
+<p>使用visio的优势有两点</p>
+
+<ul>
+  <li>
+    <p>海量已完成的图标，模板<br />
+可以直接复用他人的工作</p>
+  </li>
+  <li>
+    <p>Office套件的软件间协作<br />
+通过直接复制粘贴，或使用插入(可直接编辑、自动更新)，
+visio可以配合word、powerpoint等协作。</p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="google绘图">Google绘图</h2>
+
+<h3 id="简介-1">简介</h3>
+<p>Google出品，配合Google Drive &amp; Docs使用，在可以科学上网时，效果佳，免费。</p>
+
+<h3 id="入门-1">入门</h3>
+<p>类visio操作。</p>
+
+<hr />
+<h2 id="其他-1">其他</h2>
+
+<p><a href="https://creately.com">creately</a></p>
+:ET

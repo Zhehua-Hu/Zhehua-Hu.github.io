@@ -1,0 +1,75 @@
+I"�	<h1 id="ssd-guidance">SSD Guidance</h1>
+
+<h1 id="my-setting">My Setting</h1>
+<p>Ubuntu16.04+CUDA8.0+Cudnn5.0</p>
+
+<h1 id="setup">Setup</h1>
+<h2 id="download">Download</h2>
+<p>git clone https://github.com/weiliu89/caffe.git
+cd caffe
+git checkout ssd</p>
+
+<p>sudo apt-get install python-skimage　python-protobuf</p>
+
+<h2 id="config">Config</h2>
+<p>gedit ~/.bashrc
+export PYTHONPATH=/home/zhehua/caffe/python:$PYTHONPATH
+source ~/.bashrc
+echo $PYTHONPATH</p>
+
+<p>cp Makefile.config.example Makefile.config
+gedit Makefile.config</p>
+
+<h3 id="change-makefileconfig-as-below-">change “Makefile.config” as below :</h3>
+<p>####[1]
+USE_CUDNN := 1
+####[2]
+OPENCV_VERSION := 3
+####[3]
+WITH_PYTHON_LAYER := 1
+HDF5_DIRS :=/usr/local/hdf5/</p>
+<h1 id="whatever-else-you-find-you-need-goes-here">Whatever else you find you need goes here.</h1>
+<p>INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include　　$(HDF5_DIRS)/include /usr/include/hdf5/serial/
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib　$(HDF5_DIRS)/lib</p>
+
+<h3 id="change-makefile-as-below-">change “Makefile” as below :</h3>
+<p>LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial
+LIBRARIES += glog gflags protobuf boost_system boost_filesystem boost_regex m hdf5_serial_hl hdf5_serial</p>
+
+<h2 id="build">Build</h2>
+<p>make -j8</p>
+<h4 id="make-sure-to-include-caffe_rootpython-to-your-pythonpath">Make sure to include $CAFFE_ROOT/python to your PYTHONPATH.</h4>
+<p>make py
+make test -j8</p>
+
+<h4 id="test">Test</h4>
+<p>python
+import caffe</p>
+
+<h2 id="dataset--model">Dataset &amp; Model</h2>
+<p>mkdir $HOME/data
+cd $HOME/data
+wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
+wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar</p>
+<h1 id="extract-the-data">Extract the data.</h1>
+<p>tar -xvf VOCtrainval_11-May-2012.tar
+tar -xvf VOCtrainval_06-Nov-2007.tar
+tar -xvf VOCtest_06-Nov-2007.tar</p>
+
+<p>cd <Your CAFFE_ROOT="">
+./data/VOC0712/create_list.sh</Your></p>
+
+<h3 id="important">Important</h3>
+<p>gedit ./data/VOC0712/create_data.sh</p>
+
+<h4 id="change-below">Change Below</h4>
+<p>cur_dir=$(cd $( dirname ${BASH_SOURCE[0]} ) &amp;&amp; pwd )
+root_dir=$cur_dir/../..</p>
+<h4 id="to">To</h4>
+<p>root_dir=<Your CAFFE_ROOT="">
+./data/VOC0712/create_data.sh</Your></p>
+
+<h2 id="do-your-traineval">Do your Train/Eval</h2>
+
+:ET

@@ -1,0 +1,91 @@
+I"�	<h2 id="绪论">绪论</h2>
+<p>Vim是工业界程序员的圣战来源之一，对于特定人群而言，其好用程度不亚于一辆好车，请仔细分析，其是否增长了实际的开发效率！</p>
+
+<p>本文主要内容记录于2013年，于2016年来看，当时精力旺盛，不怕折腾，当时阅读并练习了整版vim自带的manual，回想起来，可能在嵌入式学习与应用过程中不自觉地沾染了对工具的执迷与异样的骄傲。</p>
+
+<p>Vim并不是笔者的日常编辑工具，故本文被删节为一些基础框架。</p>
+
+<h2 id="如何产生一堆乱码">如何产生一堆乱码？</h2>
+<p>这是关于vim常见的笑话，答案是让不会的人使用vim打字即可。</p>
+
+<p>设计的原因，可以由VI创建者的键盘窥知一二：</p>
+
+<p><img src="http://zhehua.info/assets/images/Toolchain/vim/cac6e2b70e0b2d0f957c0da0190205b2.png" alt="" /></p>
+
+<p><img src="http://zhehua.info/assets/images/Toolchain/vim/5130b08b96150b0668ab86649ff5653d.png" alt="" /></p>
+
+<p>就是这上下左右，都能给部分人操作异样的感觉。</p>
+
+<h2 id="入门路程">入门路程</h2>
+
+<ul>
+  <li>
+    <p>vimtutor<br />
+耗时约 1~2h</p>
+  </li>
+  <li>
+    <p>manual<br />
+英文版有10万行以上，也有中文翻译版，500页PDF以上。</p>
+  </li>
+  <li>
+    <p>Vim Cheat Sheet<br />
+彩色可打印，笔者当年还塑封了一张A3版本 :)</p>
+  </li>
+  <li>
+    <p>纸质书<br />
+《学习Vi和Vim编辑器》还可一看</p>
+  </li>
+</ul>
+
+<h2 id="插件">插件</h2>
+<ul>
+  <li>
+    <p>NERD_tree <br />
+提供展示文件/目录列表的功能，比自带的文件浏览器要好很多</p>
+  </li>
+  <li>
+    <p>ShowMarks<br />
+标记管理</p>
+  </li>
+  <li>
+    <p>NERDComment<br />
+注释管理</p>
+  </li>
+  <li>
+    <p>Autoclose<br />
+补全</p>
+  </li>
+  <li>
+    <p>matchit<br />
+增强%</p>
+  </li>
+  <li>
+    <p>fencview<br />
+自动检测文件类型</p>
+  </li>
+  <li>
+    <p>airline<br />
+状态信息条</p>
+  </li>
+  <li>
+    <p>Vundle<br />
+管理插件的插件</p>
+  </li>
+</ul>
+
+<h2 id="其他">其他</h2>
+
+<ul>
+  <li>
+    <p>配置vimrc</p>
+  </li>
+  <li>
+    <p>切换到头文件命令 <br />
+常用<code class="language-plaintext highlighter-rouge">:A</code>,<code class="language-plaintext highlighter-rouge">:AT</code>,<code class="language-plaintext highlighter-rouge">:AS</code> or <code class="language-plaintext highlighter-rouge">:AV</code></p>
+  </li>
+  <li>
+    <p>solarized配色</p>
+  </li>
+</ul>
+
+:ET

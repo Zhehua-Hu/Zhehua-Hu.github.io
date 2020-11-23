@@ -1,0 +1,49 @@
+I"�<h2 id="emoji是什么为什么使用">Emoji是什么？为什么使用？</h2>
+
+<p><img src="http://zhehua.info/assets/images/LightShare/Emoji/emoji-tongue.jpg" width="100" height="100" /></p>
+
+<ul>
+  <li>
+    <p>Emoji是一套小型表情包，由于其在Unicode拥有编码，通用性得到保证。</p>
+  </li>
+  <li>
+    <p>使用Emoji能改善阅读体验，许多网站都支持，例如Github。</p>
+  </li>
+  <li>
+    <p>输入简单，例如<code class="language-plaintext highlighter-rouge">:+1:</code>代表 <img src="http://zhehua.info/assets/images/emojis/+1.png" alt="" /></p>
+  </li>
+</ul>
+
+<h2 id="emoji可视化对应表"><a href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">Emoji可视化对应表</a></h2>
+
+<h2 id="64x64图片下载"><a href="https://github.com/WebpageFX/emoji-cheat-sheet.com">64x64图片下载</a></h2>
+
+<h2 id="段落文字转化emoji工具"><a href="http://superemojitranslator.com/emoji-translate">段落文字转化emoji工具</a></h2>
+
+<h2 id="emoji中的人物表情可能引起误解如下图">Emoji中的人物表情可能引起误解，如下图</h2>
+
+<p><img src="http://zhehua.info/assets/images/LightShare/Emoji/diff_emoji.gif" alt="" /></p>
+
+<p>详见<a href="http://doc.99yee.cn/2016/04/20/emoji_misunderstanding/">原文</a></p>
+
+<h3 id="jekyll加入emoji图像支持">Jekyll加入Emoji图像支持</h3>
+
+<p><a href="https://github.com/jekyll/jemoji">教程</a></p>
+
+<ul>
+  <li>install</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jemoji
+</code></pre></div></div>
+
+<ul>
+  <li>And add the following to your site’s _config.yml</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gems: [..., "jemoji"]
+</code></pre></div></div>
+
+<h2 id="注意本模板不适用emoji">注意，本模板不适用Emoji</h2>
+<p>开启jemoji支持会导致目录无法显示，目前无法解决</p>
+:ET

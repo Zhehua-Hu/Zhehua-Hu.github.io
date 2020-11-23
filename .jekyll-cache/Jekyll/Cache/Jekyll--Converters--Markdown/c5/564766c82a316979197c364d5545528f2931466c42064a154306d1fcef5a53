@@ -1,0 +1,74 @@
+I"Z<h2 id="博客管理">博客管理</h2>
+<h3 id="google-analytics"><a href="https://analytics.google.com/analytics">Google Analytics</a></h3>
+
+<h3 id="google-webmasters"><a href="https://www.google.com/webmasters">Google Webmasters</a></h3>
+
+<h3 id="百度站长平台"><a href="http://zhanzhang.baidu.com">百度站长平台</a></h3>
+
+<h3 id="腾讯企业邮箱"><a href="https://exmail.qq.com/">腾讯企业邮箱</a></h3>
+
+<h3 id="七牛云"><a href="https://portal.qiniu.com">七牛云</a></h3>
+
+<h3 id="dnspod"><a href="https://www.dnspod.cn/">dnspod</a></h3>
+
+<h3 id="dns-propagation-checker"><a href="https://www.whatsmydns.net/">DNS Propagation Checker</a></h3>
+
+<h3 id="godaddy"><a href="https://www.godaddy.com/">godaddy</a></h3>
+
+<h3 id="评论管理"><a href="https://disqus.com">评论管理</a></h3>
+
+<h2 id="博文发布">博文发布</h2>
+
+<ul>
+  <li>录屏</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kazam
+</code></pre></div></div>
+
+<ul>
+  <li>video to gif</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ffmpeg还有有时间控制参数
+# 分辨率-s 640x480 ， 帧率-r 15
+ffmpeg -i test.mp4 -s 640x480 -r 15 out.gif
+</code></pre></div></div>
+
+<ul>
+  <li>images to gif</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>convert *.png output.gif
+</code></pre></div></div>
+
+<ul>
+  <li>Word To Markdown</li>
+</ul>
+
+<p><a href="http://www.writage.com/">Windows Software</a></p>
+
+<p><a href="https://word-to-markdown.herokuapp.com/">Online Tool</a></p>
+
+<h2 id="分享">分享</h2>
+
+<h3 id="打印">打印</h3>
+<p>firefox，chrome经测试可以打印</p>
+
+<p>IE显示不正常，打印正常</p>
+
+<h3 id="微信">微信</h3>
+<ul>
+  <li>
+    <p>用微信打开博文</p>
+  </li>
+  <li>
+    <p>分享到朋友圈</p>
+  </li>
+  <li>
+    <p>该分享有图片+标题<br />
+标题为该页面title | site.title。
+图片为该页面最前面的一张符合条件的图片，即尺寸大于300px × 300px。</p>
+  </li>
+</ul>
+:ET

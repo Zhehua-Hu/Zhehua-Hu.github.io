@@ -1,0 +1,41 @@
+I"d<h2 id="学习资源">学习资源</h2>
+<p><a href="http://zetcode.com/gui/pyqt5/">Zetcode</a>
+Zetcode.com上有比较完整的入门pyqt5的教程，国内有不少人翻译了,如<a href="http://www.cnblogs.com/archisama/tag/PyQt5/">1</a>.</p>
+
+<p><a href="http://www.cnblogs.com/hhh5460/tag/pyqt5/">推荐博客</a></p>
+
+<h2 id="环境配置">环境配置</h2>
+<p>分为ubuntu，windows，
+python2 3</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python3-pyqt5
+
+# DO NOT USE sudo apt-get install python3-pyqt5
+# Recommand USe Opencv3+ and python2.7
+
+sudo apt-get install pyqt5-dev-tools
+sudo apt-get install qt4-designer
+
+pip install -U numpy
+
+pyuic4 button.ui -o button.py
+
+
+windwos
+pip install pyinstaller
+
+
+
+#ubuntu
+pip install pyinstaller --user
+#if use python is 3+ which you don't need
+git clone https://github.com/pyinstaller/pyinstaller.git
+</code></pre></div></div>
+
+<p>pycharm pyQt QtDesigner</p>
+
+<h2 id="笔记">笔记</h2>
+
+<p>Dialog and mainwinodws 都是继承与 Widget,Dialog and mainwinodws 都是继承与 Widget。</p>
+
+:ET

@@ -1,0 +1,131 @@
+I"9
+<h2 id="天线性质">天线性质</h2>
+<p>天线基于互感定理，同一天线作为发射或接受的基本特性参数是相同的。</p>
+
+<h2 id="性能因素">性能因素</h2>
+
+<h3 id="尺寸">尺寸</h3>
+
+<h3 id="位置">位置</h3>
+
+<h3 id="环境">环境</h3>
+
+<h3 id="极化方向">极化方向</h3>
+
+<ul>
+  <li>
+    <p>天线电场方向</p>
+  </li>
+  <li>
+    <p>接受天线的极化方向需等于电磁波的极化方向</p>
+  </li>
+  <li>
+    <p>分类</p>
+
+    <ul>
+      <li>
+        <p>全向天线/圆极化</p>
+      </li>
+      <li>
+        <p>定向极化</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="频段">频段</h3>
+<p>定义</p>
+
+<ul>
+  <li>
+    <p>SWR小于等于1.5时</p>
+  </li>
+  <li>
+    <p>天线增益下降3dB时</p>
+  </li>
+</ul>
+
+<h3 id="阻抗匹配">阻抗匹配</h3>
+<p>常见特性阻抗50或70，与馈线匹配</p>
+
+<h2 id="无线链路预测">无线链路预测</h2>
+
+<p>###　电磁波传输途径</p>
+
+<ul>
+  <li>
+    <p>直接波<br />
+由于地球是圆的，一个电台一般只能传播70km</p>
+  </li>
+  <li>
+    <p>电离层反射波</p>
+
+    <ul>
+      <li>
+        <p>超短波</p>
+      </li>
+      <li>
+        <p>由于是反射，所以不同波长有不同范围</p>
+      </li>
+      <li>
+        <p>短驳</p>
+      </li>
+      <li>
+        <p>地表波</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>###　电磁波传输特性</p>
+<ul>
+  <li>
+    <p>波的能量随距离呈幂级数递减</p>
+  </li>
+  <li>
+    <p>频率越高，越难越过障碍</p>
+  </li>
+</ul>
+
+<p>###　常见环境及阻挡物类型与衰减值/dB</p>
+
+<ul>
+  <li>
+    <p>环境及阻挡物类型 衰减值/dB</p>
+  </li>
+  <li>
+    <p>楼层底板 30</p>
+  </li>
+  <li>
+    <p>砖墙上的窗 2</p>
+  </li>
+  <li>
+    <p>办公室隔墙 6</p>
+  </li>
+  <li>
+    <p>办公室墙上的金属门 6</p>
+  </li>
+  <li>
+    <p>煤渣砌块墙体　6</p>
+  </li>
+  <li>
+    <p>砖墙上的金属门　6</p>
+  </li>
+  <li>
+    <p>金属门旁的砖墙　6</p>
+  </li>
+</ul>
+
+<hr />
+<h3 id="基于mathematica的无线链路预测">基于Mathematica的无线链路预测</h3>
+<p><a href="http://zhehua.info/assets/files/无线链路距离预测.nb">.nb下载</a></p>
+
+<script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.setDefaultContent('<a href="http://www.wolfram.com/cdf-player/"><img  src="http://zhehua.info/assets/files/无线链路距离预测.png"></a>');
+cdf.embed('http://zhehua.info/assets/files/无线链路距离预测.cdf', 460, 574);
+</script>
+
+:ET

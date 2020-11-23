@@ -1,0 +1,195 @@
+I"<h2 id="分类">分类</h2>
+<h3 id="按用途">按用途</h3>
+<ul>
+  <li>
+    <p>导航型、制图型</p>
+  </li>
+  <li>
+    <p>测量型，价格非常高</p>
+  </li>
+</ul>
+
+<h3 id="按技术">按技术</h3>
+<ul>
+  <li>
+    <p>普通GPS<br />
+精度5~10m</p>
+  </li>
+  <li>
+    <p>DGPS</p>
+    <ul>
+      <li>
+        <p>位置差分，最简单</p>
+      </li>
+      <li>
+        <p>伪距差分原理，应用最多</p>
+      </li>
+      <li>
+        <p>RTK（Real TimeKinematic）载波相位差分，可达到动态厘米级，静态毫米级</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="工作条件">工作条件</h2>
+<p>卫星运行在距离地表20200km的高空, GPS高度不是海平面高度</p>
+
+<h3 id="卫星数量">卫星数量</h3>
+<ul>
+  <li>
+    <p>两颗<br />
+有源定位，如中国北斗一代</p>
+  </li>
+  <li>
+    <p>三颗<br />
+二维定位</p>
+  </li>
+  <li>
+    <p>四颗<br />
+三维定位</p>
+  </li>
+</ul>
+
+<h3 id="为什么至少需要四颗">为什么至少需要四颗</h3>
+<p>由于有四个未知量</p>
+<ul>
+  <li>
+    <p>经度</p>
+  </li>
+  <li>
+    <p>纬度</p>
+  </li>
+  <li>
+    <p>高度</p>
+  </li>
+  <li>
+    <p>钟差</p>
+  </li>
+</ul>
+
+<h3 id="dop">DOP</h3>
+
+<h4 id="pdopposition-dilution-of-precision">PDOP(Position Dilution Of Precision)</h4>
+<ul>
+  <li>
+    <p>至少需要&lt;5，越小表征分散度越好，如PDOP=3时是PDOP=1的三分之一</p>
+  </li>
+  <li>
+    <p>GPS每天在同一地点早4分钟，则第一天10:00信号不好，第二天则是09:56</p>
+  </li>
+</ul>
+
+<h4 id="hdop">HDOP</h4>
+
+<h3 id="坐标系统-wgs84world-geodetic-system-1984">坐标系统 WGS84(World Geodetic System 1984)</h3>
+<ul>
+  <li>
+    <p>地图通常使用该坐标系，使用其他坐标系则有误差</p>
+  </li>
+  <li>
+    <p>坐标系统与参考椭球以及地图投影有关</p>
+  </li>
+</ul>
+
+<h3 id="gps时间">GPS时间</h3>
+<p>如使用北京时间（授时中心不在北京），各地均有相应时差</p>
+
+<h3 id="启动方式">启动方式</h3>
+<ul>
+  <li>
+    <p>冻启动</p>
+  </li>
+  <li>
+    <p>冷启动</p>
+  </li>
+  <li>
+    <p>热启动</p>
+  </li>
+</ul>
+
+<h3 id="历书更新">历书更新</h3>
+<ul>
+  <li>
+    <p>Almanac 历书<br />
+几个月有效</p>
+  </li>
+  <li>
+    <p>Ephemeris 星历</p>
+    <ul>
+      <li>
+        <p>GPS卫星30秒广播一次</p>
+      </li>
+      <li>
+        <p>几小时有效</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="精度相关">精度相关</h3>
+<ul>
+  <li>
+    <p>如使用手持式接收机，则人的身体可能阻挡信号<br />
+面朝南，然后朝北测试搜星数</p>
+  </li>
+  <li>
+    <p>一般来说，取平均值可提高精度</p>
+  </li>
+  <li>
+    <p>S/A(Selective Availability)<br />
+美国主动引入时钟误差与坐标误差，持续时间1990-2000.</p>
+  </li>
+</ul>
+
+<h2 id="gps信号频率">GPS信号频率</h2>
+
+<h3 id="l1157542mhz">L1(1575.42MHz)</h3>
+<ul>
+  <li>
+    <p>C/A码</p>
+  </li>
+  <li>
+    <p>导航信息</p>
+  </li>
+  <li>
+    <p>L1C</p>
+  </li>
+</ul>
+
+<h3 id="l2122760mhz">L2(1227.60MHz)</h3>
+<ul>
+  <li>
+    <p>L2C码</p>
+  </li>
+  <li>
+    <p>导航信息</p>
+  </li>
+</ul>
+
+<h3 id="l5117645mhz">L5(1176.45MHz)</h3>
+<ul>
+  <li>某民用码</li>
+</ul>
+
+<h3 id="军用">军用</h3>
+<ul>
+  <li>
+    <p>W码，Y码，P(Y)</p>
+  </li>
+  <li>
+    <p>P码（加密）</p>
+  </li>
+  <li>
+    <p>M码</p>
+  </li>
+</ul>
+
+<h2 id="报文格式">报文格式</h2>
+
+<h3 id="通用">通用</h3>
+<p>NMEA(National Maritime Electronics Association)</p>
+
+<h3 id="dgps">DGPS</h3>
+<p>RTCM(Radio Technical Commission for Maritime Services)</p>
+
+:ET

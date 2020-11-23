@@ -1,0 +1,19 @@
+I"j<h2 id="绪论">绪论</h2>
+<p>JSON(JavaScript Object Notation)是一种轻量级的数据交换格式，常用于web类服务中。</p>
+
+<p>换言之，其序列化/反序列化过程中通常不保存中间文件存储。</p>
+
+<p>本文讲解了Python读写JSON文件，示例代码详见</p>
+
+<h2 id="简明语法">简明语法</h2>
+
+<h2 id="下载安装">下载安装</h2>
+
+<h2 id="实用示例">实用示例</h2>
+
+<h2 id="参考">参考</h2>
+
+<p><a href="http://www.runoob.com/python/python-json.html">runoob简明中文教程</a></p>
+
+<p><a href="https://docs.python.org/2/library/json.html">docs.python</a></p>
+:ET

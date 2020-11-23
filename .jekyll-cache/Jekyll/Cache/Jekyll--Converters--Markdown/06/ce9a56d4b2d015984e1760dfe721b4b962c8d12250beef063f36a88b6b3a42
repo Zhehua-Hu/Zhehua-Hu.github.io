@@ -1,0 +1,130 @@
+I"�<blockquote>
+  <p>有人说，程序员是不能有母语的。</p>
+
+  <p>换言之，不是职业程序员的学者、学生、工程师、爱好者等常常会有自己的母语。</p>
+
+  <p>而这，通常是在暗示编译类语言对其代码风格与工作范式的影响。</p>
+
+  <p>但Python，恰恰适合作为你的母语，无论职业年龄。</p>
+
+  <p>究其原因，在于Python如水——利万物而不争,故莫能与之争。</p>
+</blockquote>
+
+<h2 id="绪论">绪论</h2>
+<p>浅谈学习之路</p>
+
+<h4 id="进阶主题">进阶主题</h4>
+
+<ul>
+  <li>decorator
+<a href="https://wiki.python.org/moin/PythonDecoratorLibrary">用法大全</a></li>
+</ul>
+
+<p>http://blog.csdn.net/jmilk/article/details/52504950#%E8%A3%85%E9%A5%B0%E5%99%A8%E8%83%BD%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98</p>
+
+<h3 id="学习资源">学习资源</h3>
+<p><a href="http://www.runoob.com/python">Python 基础教程</a></p>
+
+<h2 id="lib">Lib</h2>
+<p>Numpy	
+scipy	
+matplotlib	
+ipython	
+Math</p>
+
+<p>Sys	
+Os	
+Argparse
+Pprint	
+Csv</p>
+
+<p>Sqlite3	
+	Db browser for sqlite:
+	sudo apt-get install sqlitebrowser
+scikit-learn	
+Re	
+unittest</p>
+
+<p>Logging	
+Itertools	
+Beautifulsoup	
+Tempfile	
+Sched</p>
+
+<p>Subpross<a href="http://sharats.me/the-ever-useful-and-neat-subprocess-module.html">http://sharats.me/the-ever-useful-and-neat-subprocess-module.html</a>
+Fileinput	
+Hashlib</p>
+
+<h3 id="正则表达式-re">正则表达式 re</h3>
+
+<p><a href="https://regex101.com/">某种程度上的可视化</a></p>
+
+<h2 id="独立专题">独立专题</h2>
+
+<h3 id="virtualenv">virtualenv</h3>
+<ul>
+  <li>为什么要使用虚拟python环境工具　virtualenv？</li>
+</ul>
+
+<p>原因在于，当你需要同时维护多个使用了python的项目时，
+virtualenv使得这些项目可以在同一时间基于不同版本的python与库运行。</p>
+
+<ul>
+  <li>安装</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install virtualenv
+virtualenv --version
+</code></pre></div></div>
+
+<ul>
+  <li>创建</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv newpy --python=python2.7
+# virtualenv有些可选参数，上条命令选择使用的python版本
+# 具体查询
+virtualenv --help
+</code></pre></div></div>
+
+<ul>
+  <li>工作方式
+```
+    <h1 id="激活虚拟环境">激活虚拟环境</h1>
+    <p>source ./newpy/bin/activate</p>
+  </li>
+</ul>
+
+<h1 id="这之后就进入了虚拟环境">这之后就进入了虚拟环境</h1>
+<h1><working time=""></working></h1>
+
+<h1 id="退出虚拟环境">退出虚拟环境</h1>
+<p>deactive
+```</p>
+
+<h3 id="可执行文件打包">可执行文件打包</h3>
+<p>pyinstaller -F -w -i manage.ico app.py</p>
+
+<p>-F：打包为单文件
+-w：Windows程序，不显示命令行窗口
+-i：是程序图标，app.py是你要打包的py文件</p>
+
+<p>你可以用pip导出你的dependency:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pip freeze &gt; requirements.txt
+</code></pre></div></div>
+
+<p>然后在通过以下命令安装dependency:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pip install -r requirements.txtdr
+</code></pre></div></div>
+
+<p><a href="http://blog.csdn.net/xiong_big/article/details/54614231">pyinstaller的库导入和多进程打包问题 </a></p>
+
+<h3 id="language-interface">Language Interface</h3>
+<p>Python调用C函数<a href="http://www.cricode.com/359.html">http://www.cricode.com/359.html</a></p>
+
+<hr />
+<h2 id="ps">PS</h2>
+<p>如果不是python2与python3的版本分歧，python或可成为大众的最好语言 ：）</p>
+:ET

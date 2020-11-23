@@ -1,0 +1,8 @@
+I"M<h2 id="忽略同步文件夹">忽略同步文件夹</h2>
+<p>使用“选择性同步”</p>
+
+<h2 id="只同步部分文件类型">只同步部分文件类型</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gedit ~/.nutstore/db/customExtRules.cfg
+</code></pre></div></div>
+
+:ET

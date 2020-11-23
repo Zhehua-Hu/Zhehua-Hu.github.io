@@ -1,0 +1,78 @@
+I"<h2 id="避免圣战珍惜生命">避免圣战，珍惜生命</h2>
+
+<h2 id="install-package-control">Install Package Control</h2>
+<ul>
+  <li>Press “Ctrl+`”</li>
+  <li>Paste below codes(From <a href="https://packagecontrol.io/installation">Web</a>) and run it(Press “enter”). May update below code, please check!
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) 
+</code></pre></div>    </div>
+  </li>
+  <li>Restart</li>
+</ul>
+
+<h2 id="change-theme">Change Theme</h2>
+<p>Preference -&gt; Color Scheme -&gt; Solarized Dark</p>
+
+<h2 id="license">License</h2>
+<p>Version3103 licence</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>—– BEGIN LICENSE —–
+Michael Barnes
+Single User License
+EA7E-821385
+8A353C41 872A0D5C DF9B2950 AFF6F667
+C458EA6D 8EA3C286 98D1D650 131A97AB
+AA919AEC EF20E143 B361B1E7 4C8B7F04
+B085E65E 2F5F5360 8489D422 FB8FC1AA
+93F6323C FD7F7544 3F39C318 D95E6480
+FCCC7561 8A4A1741 68FA4223 ADCEDE07
+200C25BE DBBC4855 C4CFB774 C5EC138C
+0FEC1CEF D9DCECEC D3A5DAD1 01316C36
+—— END LICENSE ——
+</code></pre></div></div>
+<h2 id="packages">Packages</h2>
+<ul>
+  <li>MarkDown support <a href="http://theo.im/OmniMarkupPreviewer/">OmniMarkupPreviewer</a>
+    <blockquote>
+      <ul>
+        <li>Bring up the Command Palette (Ctrl+Shift+P on Windows and Linux. ⌘+⇧+P on OS X).</li>
+        <li>Type “Install” and select “Package Control: Install Package”.</li>
+        <li>Select “OmniMarkupPreviewer” from list.</li>
+        <li>Select “Caffe Prototxt Syntax” from list.</li>
+        <li>Once you have Package Control installed, restart Sublime Text.</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>Key Bindings
+    <blockquote>
+      <ul>
+        <li>Ctrl+Alt+O: Preview Markup in Browser.</li>
+        <li>Ctrl+Alt+X: Export Markup as HTML.</li>
+        <li>Ctrl+Alt+C: Copy Markup as HTML</li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="hotkey">Hotkey</h2>
+<ul>
+  <li>Command Palette
+    <blockquote>
+      <p>Ctrl+Shift+P</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="sources">Sources</h2>
+<ul>
+  <li>
+    <p><a href="http://www.imooc.com/learn/333">快乐的sublime编辑器</a></p>
+  </li>
+  <li>
+    <p><a href="http://zh.lucida.me/blog/sublime-text-complete-guide">Sublime Text 全程指南</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.xuanfengge.com/practical-collection-of-sublime-plug-in.html">实用的sublime插件集合</a></p>
+  </li>
+</ul>
+
+:ET

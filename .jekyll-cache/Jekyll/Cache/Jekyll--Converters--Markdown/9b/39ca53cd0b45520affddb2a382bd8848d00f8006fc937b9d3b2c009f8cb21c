@@ -1,0 +1,67 @@
+I"3<h1 id="profile">profile</h1>
+<p>##ubuntu</p>
+<ul>
+  <li>Run profilemanager
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thunderbird -profilemanager 
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>or</strong></p>
+
+<ul>
+  <li>Modify profiles.ini(Recommanded)
+/home/zhehua/.thunderbird/profiles.ini
+“IsRelative” means relative
+```
+[General]
+StartWithLastProfile=1</li>
+</ul>
+
+<p>[Profile0]
+Name=default
+IsRelative=1
+Path=ismxhitq.default</p>
+
+<p>[Profile1]
+Name=thunderbird_20160819
+IsRelative=0
+Path=/home/zhehua/CrossSync/SoftwareConfig/Email
+Default=1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+##windows
+C:\Users\YOURNAME\AppData\Roaming\Thunderbird\profiles.ini
+add below codes
+</code></pre></div></div>
+<p>[Profile1]
+Name=thunderbird_20160819
+IsRelative=0
+Path=H:\Clouds\CrossSync\SoftwareConfig\Email
+Default=1
+```</p>
+
+<h1 id="add-on">Add-on</h1>
+<p>Thunderbird Conversations
+按邮件话题集中显示相关邮件</p>
+
+<p>Download Status Bar</p>
+
+<h1 id="faq">FAQ</h1>
+<p>When I send a message using Thunderbird, it hangs on “Copying message to Sent folder”?</p>
+<ul>
+  <li>Tools –&gt; Account Settings</li>
+  <li>Select ‘Copies and Folders’ under your Citadel account.</li>
+  <li>Look for the box that says ‘When sending messages, automatically…’ and observe that there is a checkbox below it labelled ‘Place a copy in…’</li>
+  <li>Uncheck that box, click OK, and resume your happy day.</li>
+</ul>
+
+<h1 id="sources">Sources</h1>
+<p><a href="http://kb.mozillazine.org/Moving_your_profile_folder_-_Thunderbird">Profile Setting</a></p>
+
+<h1 id="my-config">My config</h1>
+<p>BUAA
+IMAP mail.buaa.edu.cn 993 SSL NORMAL PASSWORD
+SMTP mail.buaa.edu.cn 465 SSL NORMAL PASSWORD</p>
+
+:ET

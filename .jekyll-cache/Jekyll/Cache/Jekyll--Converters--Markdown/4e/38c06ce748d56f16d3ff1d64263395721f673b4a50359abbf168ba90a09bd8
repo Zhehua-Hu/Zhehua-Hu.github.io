@@ -1,0 +1,78 @@
+I"�<h2 id="安装依赖">安装依赖</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install build-essential
+sudo apt-get -y install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get -y install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libdc1394-22-dev libgphoto2-dev
+</code></pre></div></div>
+
+<h2 id="对某些设备可能需要安装">对某些设备可能需要安装</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install libopencv-dev libdc1394-22 libjpeg-dev libpng12-dev libtiff4-dev libavcodec-dev libavformat-dev libswscale-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev  libqt4-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils python-scipy python-pip python-virtualenv
+</code></pre></div></div>
+
+<h2 id="编译安装流程">编译安装流程</h2>
+
+<h3 id="创建build文件夹并进入">创建build文件夹并进入</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir build &amp;&amp; cd build
+</code></pre></div></div>
+
+<h3 id="选择一种安装方式并配置cmake">选择一种安装方式，并配置cmake</h3>
+
+<ul>
+  <li>最简单安装</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+</code></pre></div></div>
+
+<ul>
+  <li>对于安装OpenCV3以上版本，部分“新式”算法独立在opencv_contrib，如需安装，需下载后制定位置</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+</code></pre></div></div>
+
+<ul>
+  <li>TX1安装
+<a href="http://blog.csdn.net/Jalong_Ma/article/details/52743923">参考</a></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -DCUDA_ARCH_BIN="5.3" -DCUDA_ARCH_PTX="" -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DCUDA_FAST_MATH=ON ..
+</code></pre></div></div>
+
+<p>若遇到Error: NppiGraphcutState</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gedit ../modules/cudalegacy/src/graphcuts.cpp
+# 将下句
+#if !defined (HAVE_CUDA) || defined (CUDA_DISABLER)
+# 改为
+#if !defined (HAVE_CUDA) || defined (CUDA_DISABLER)  || (CUDART_VERSION &gt;= 8000)
+</code></pre></div></div>
+
+<h3 id="编译并安装">编译并安装</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make -j12
+sudo make install -j12
+</code></pre></div></div>
+
+<h2 id="卸载">卸载</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo rm /usr/local/share/OpenCV -r
+sudo rm libopencv*
+sudo apt-get purge libopencv*
+sudo apt-get autoremove opencv-data
+</code></pre></div></div>
+
+<h2 id="常见问题">常见问题</h2>
+<h3 id="error-ippcv">Error: ippcv</h3>
+<p><a href="http://askubuntu.com/questions/734738/cmake-opencv-installation-issue">Ref</a></p>
+
+<p>download: <a href="http://www.linuxfromscratch.org/blfs/view/svn/general/opencv.html">http://www.linuxfromscratch.org/blfs/view/svn/general/opencv.html</a></p>
+
+<p>copy to opencv/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/</p>
+
+<p>sudo cp ~/linuxware/OPENCV3_1n/opencv-3.1.0/3rdparty/ippicv/downloads/linux-808b791a6eac9ed78d32a7666804320e/ippicv_lnx/lib/intel64/libippicv.a /usr/local/lib</p>
+
+<h3 id="ubuntu1604-opencv3绑定python3x">Ubuntu16.04 OpenCV3绑定python3.x</h3>
+
+:ET

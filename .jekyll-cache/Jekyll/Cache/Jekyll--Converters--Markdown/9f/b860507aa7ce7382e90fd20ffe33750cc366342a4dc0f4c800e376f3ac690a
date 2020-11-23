@@ -1,0 +1,188 @@
+I"�<h1 id="basic-markdown-tutorials-title">Basic Markdown Tutorials (Title)</h1>
+
+<h2 id="basics-subtitleat-least-3--">Basics (Subtitle,at least 3 ‘-‘)</h2>
+<h1 id="1-section-style">1. Section Style</h1>
+<h1 id="section-1">section 1</h1>
+<h2 id="section-2">section 2</h2>
+<h3 id="section-3">section 3</h3>
+<h4 id="section-4">section 4</h4>
+<h5 id="section-5">section 5</h5>
+<h6 id="section-6">section 6</h6>
+
+<hr />
+
+<hr />
+
+<h1 id="2text-style">2.Text Style</h1>
+<p>bold &lt;-&gt; <strong>bold</strong></p>
+
+<p>italic &lt;-&gt; <em>italic</em></p>
+
+<p>strike &lt;-&gt; <del>strike</del></p>
+
+<p>single ‘enter’ is single blank(‘ ‘)</p>
+
+<p>double ‘enter’ is real enter</p>
+
+<h1 id="3reference-style">3.Reference Style</h1>
+<p>Talk is cheap, show me the code.</p>
+
+<!-- This is comment -->
+
+<table>
+  <tbody>
+    <tr>
+      <td>This is inline code -&gt;</td>
+      <td><code class="language-plaintext highlighter-rouge">Talk is cheap, show me the code.</code></td>
+      <td>&lt;- inline code ends here.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;iostream&gt;
+
+int main()
+{
+    std::cout&lt;&lt; "Hello World!\n";
+}
+</code></pre></div></div>
+<blockquote>
+  <p>Ref1</p>
+  <blockquote>
+    <p>Ref1.1</p>
+    <blockquote>
+      <p>Ref1.1.1</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>Ref2</p>
+</blockquote>
+
+<blockquote>
+  <p>Ref3</p>
+</blockquote>
+
+<p>两空格后再回车是等于实际回车</p>
+<blockquote>
+  <p>clone<br />
+<code class="language-plaintext highlighter-rouge">git clone &lt;link&gt;</code><br />
+<code class="language-plaintext highlighter-rouge">git clone &lt;link&gt; &lt;folder name&gt;</code></p>
+</blockquote>
+
+<hr />
+<p>Address: <a href="mailto:Someone@company.com">Someone@company.com</a></p>
+
+<p>Website: <a href="https://sm.ms/">Submit your picture to get link</a></p>
+
+<p>WebLinkImg: <img src="https://ooo.0o0.ooo/2016/06/10/575aba38d2647.jpg" alt="Logo" /></p>
+
+<p>控制图片大小
+<img src="https://ooo.0o0.ooo/2016/06/10/575aba38d2647.jpg" width="100" height="100" /></p>
+
+<p>LocalLinkImg:<img src="http://zhehua.info/assets/images/Toolchain/Markdown/logo_test.png" alt="" /></p>
+
+<p>LogoWithLink:<a href="http://zhehua.info"><img src="http://zhehua.info/assets/images/Toolchain/Markdown/logo_test.png" alt="" /></a></p>
+
+<p>Video:
+From Youtube</p>
+<iframe width="716" height="401" src="https://www.youtube.com/embed/DVwHCGAr_OE" frameborder="0" allowfullscreen=""></iframe>
+
+<p>From Youku</p>
+
+<hr />
+
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+
+<h1 id="4lists">4.Lists</h1>
+
+<ul class="task-list">
+  <li>A.</li>
+  <li>B.</li>
+  <li>
+    <p>C.</p>
+  </li>
+  <li>A.
+    <ul>
+      <li>A.1</li>
+      <li>A.2</li>
+    </ul>
+  </li>
+  <li>B.</li>
+  <li>
+    <p>C</p>
+  </li>
+  <li>A(need a blank after ‘*’)
+    <ul>
+      <li>A.1</li>
+      <li>A.2
+        <ul>
+          <li>A.2.1
+            <ul>
+              <li>A.2.1.1</li>
+              <li>A.2.1.2
+                <ul>
+                  <li>(a)</li>
+                  <li>(b)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>A.2.2</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />x</p>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />x</li>
+</ul>
+
+<ol>
+  <li>banana</li>
+  <li>appple</li>
+  <li>pear</li>
+</ol>
+
+<h1 id="5tables">5.Tables</h1>
+<p>| |AAAAAA|BBBBBB|CCCCCC|
+|—-|:—-|:—-:|—-:|
+|X|1|2|3|
+|Y|4|5|6|</p>
+
+<h1 id="6math">6.Math</h1>
+<blockquote>
+  <p>MathJax
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p>
+</blockquote>
+
+<ul>
+  <li>
+\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+  </li>
+  <li>\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</li>
+</ul>
+
+<blockquote>
+  <p>Google Chart</p>
+</blockquote>
+
+<p>&lt;img src=”http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+“style=”border:none;”&gt;</p>
+
+<pre><code class="language-flow">st=&gt;start: Start:&gt;http://alfred-sun.github.io
+io=&gt;inputoutput: verification
+op=&gt;operation: Your Operation
+cond=&gt;condition: Yes or No?
+sub=&gt;subroutine: Your Subroutine
+e=&gt;end:&gt;https://github.com/adrai/flowchart.js
+
+st-&gt;io-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;sub-&gt;io
+</code></pre>
+
+<p><a href="http://www.appinn.com/markdown/#p">Markdown 语法说明 </a></p>
+:ET

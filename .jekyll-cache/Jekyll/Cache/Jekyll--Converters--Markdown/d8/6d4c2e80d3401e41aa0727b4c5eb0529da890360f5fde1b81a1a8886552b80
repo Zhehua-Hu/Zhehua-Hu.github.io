@@ -1,0 +1,34 @@
+I"�<h2 id="绪论">绪论</h2>
+<p>常见的的数学计算工具如下：</p>
+
+<ul>
+  <li>
+    <p>MATLAB（对应开源版本octave)<br />
+除开可以被计算机内置计算器、python等替代的功能，强在工程计算/仿真与工具箱种类上。</p>
+  </li>
+  <li>
+    <p>Mathematica<br />
+简单地用Mathematica就是一个强大的计算器。
+在符号推导、可视化计算等太多方面可用性领先。</p>
+  </li>
+</ul>
+
+<h2 id="简单笔记">简单笔记</h2>
+
+<h3 id="mathematica">Mathematica</h3>
+<p>计算： Shift+enter</p>
+
+<p>函数使用 [ ]，首字母必须大写</p>
+
+<p>string使用 “ “</p>
+
+<p>自动识别并补全</p>
+
+<h3 id="matlab">MATLAB</h3>
+<p>函数使用( )</p>
+
+<p>tab自动补全</p>
+
+<p>string使用 ‘ ‘</p>
+
+:ET
